@@ -47,6 +47,113 @@ class CSVExtractor:
         if match_wheels_steering:
             return match_wheels_steering.group(1).strip()
 
+        # 3. Padrões para "Lift - [FL/FR/RL/RR] Control" -> "LIFT"
+        # Ex: 'Lift - FL Control: Warning...' -> 'LIFT'
+        match_lift_control = re.search(r'^(LIFT)\s-\s(?:FL|FR|RL|RR)\sCONTROL', description)
+        if match_lift_control:
+            return match_lift_control.group(1).strip()
+
+        # 4. Padrões de TAGs conhecidas no início ou meio da descrição
+        # Esta lista foi reordenada para priorizar TAGs mais curtas ou que podem ser prefixos
+        patterns_specific_keywords = [
+            r'\b(PGV)\b', # Adicionado para pegar PGV especificamente
+            r'\b(BATTERY)\b', # Adicionado para pegar Battery especificamente
+            r'\b(LIFT)\b', # Adicionado para pegar Lift especificamente
+            r'\b(STO)\b',
+            r'\b(MC)\b',
+            r'\b(SYSTEM)\b',
+            r'\b(NAVIGATION)\b',
+            r'\b(GENERALS)\b',
+            r'\b(BYPASS)\b',
+            r'\b(ANTICOLLISION)\b',
+            r'\b(POSITIONING)\b',
+            r'\b(POWERTRAIN)\b',
+            r'\b(SCANNER FRONT)\b', r'\b(SCANNER REAR)\b', r'\b(SCALANCE)\b',
+            r'\b(ENCODER FRONT)\b', r'\b(ENCODER REAR)\b',
+            r'\b(80FQ1)\b', r'\b(80FQ2)\b', r'\b(91XF2)\b', r'\b(75BS2)\b', r'\b(75BS4)\b', # Códigos específicos
+            r'\b(TL\d+)\b', r'\b(FC\d+)\b', r'\b(BS\d+)\b', r'\b(WF\d+)\b', r'\b(MA\d+)\b',
+            r'\b(QA\d+)\b', r'\b(BG\d+)\b', r'\b(SF\d+)\b', r'\b(XD\d+)\b', r'\b(XG\d+)\b',
+            r'\b(KF\d{3}\.\d{2})\b', r'\b(KF\d{3})\b', r'\b(FN\d+)\b', r'\b(FQ\d+)\b',
+            r'\b(PJ\d+)\b', r'\b(QB\d+)\b', r'\b(TB\d+)\b', r'\b(WG\d+)\b', r'\b(D\d+)\b',
+            r'\b(R\d+)\b', r'\b(XF\d+)\b', r'\b(BY\d+)\b', r'\b(PH\d+)\b', r'\b(GB\d+)\b',
+            r'\b(PF\d+)\b', r'\b(SZ\d+)\b', r'\b(U[C]?\d+)\b', r'\b(RCAN\d+)\b',
+            r'\b(PLS\sFRONT)\b', r'\b(PLS\sREAR)\b', r'\b(ANS)\b',
+            r'\b(FRONT\sLEFT)\b', r'\b(REAR\sRIGHT)\b',
+            r'\b(TABLE\sLEFT)\b', r'\b(TABLE\sRIGHT)\b', r'\b(STEERING\sFRONT)\b',
+            r'\b(STEERING\sREAR)\b', r'\b(LIFT\s-\sFL)\b', r'\b(LIFT\s-\sFR)\b',
+            r'\b(LIFT\s-\sRL)\b', r'\b(LIFT\s-\sRR)\b', r'\b(BCC)\b', r'\b(DB9)\b',
+            r'\b(XDPE)\b', r'\b(PLACA\sDE\sDADOS)\b',
+            r'=(?:[A-Z0-9]+)\+P\d+-(BS\d+)', # Ex: =001FTF001+P101-BS1 -> BS1
+        ]
+
+        for pattern in patterns_specific_keywords:
+            match = re.search(pattern, description)
+            if match:
+                # Para o padrão de =...-BSx, queremos o grupo 1 (BSx)
+                if pattern == r'=(?:[A-Z0-9]+)\+P\d+-(BS\d+)':
+                    return match.group(1).strip()
+                return match.group(0).strip()
+
+        # --- Padrões Genéricos de Fallback (se nada específico for encontrado) ---
+
+        # Tenta capturar a primeira palavra antes de ':' ou '-' como uma TAG
+        match_prefix = re.match(r'([A-Z0-9\s]+?)(?:\s*[:\-–—,.]|$)', description)
+        if match_prefix:
+            potential_tag = match_prefix.group(1).strip()
+            # Evita que palavras muito comuns sejam consideradas TAGs genéricas
+            common_words = ["CAN OPEN", "GENERALS", "NAVIGATION", "SYSTEM", "WHEELS", "FRONT", "REAR", "STEERING",
+                            "LEFT", "RIGHT", "STROKE", "DATA", "NOT", "VALID", "FROM", "MC", "LINE", "LOST", "FOUND",
+                            "ANTICOLLISION", "ON", "CHECKPOINTFAILED", "PRECISE", "POSITIONING", "REACHED", "BOOTING",
+                            "COMMUNICATION", "FAILURE", "PROFINET", "KEY", "ACTIVATED", "BYPASS", "SYNCHRONIZED",
+                            "IN", "MANUAL", "AUTOMATIC", "MODE", "AND", "AUTOSTART", "POWER", "LIFT", "SENSOR",
+                            "MODULE", "CONTROL", "UNIT", "ERROR", "ALARM", "WARNING", "STATUS", "MESSAGE", "FAULT",
+                            "PROBLEM", "ISSUE", "DETECTED", "REPORTED", "FAILURE", "MALFUNCTION", "OVERLOAD",
+                            "UNDERVOLTAGE", "OVERCURRENT", "TEMPERATURE", "LIMIT", "SPEED", "PHASE", "EMERGENCY",
+                            "BATTERY", "SAVE", "OTHER", "BLANK", "SEGMENT", "VELOCITY", "STALL", "NOT", "OPERATIONAL",
+                            "CRITICAL", "HOST", "OVER", "UNDER", "BAD", "PARAMETER", "REGEN", "MOVE", "LOW",
+                            "ABSOLUTE", "ABS", "TABLE", "GOVERNANCE", "RULE", "OF", "LAW", "HUMAN", "RIGHTS",
+                            "JUSTICE", "EQUALITY", "INCLUSION", "DIVERSITY", "EQUITY", "ACCESSIBILITY", "SOCIAL",
+                            "IMPACT", "SUSTAINABILITY", "DEVELOPMENT", "GOALS", "SDGS", "POVERTY", "ALLEVIATION",
+                            "HUNGER", "ERADICATION", "GOOD", "HEALTH", "WELLBEING", "QUALITY", "EDUCATION", "GENDER",
+                            "EQUALITY", "CLEAN", "WATER", "SANITATION", "AFFORDABLE", "CLEAN", "ENERGY", "DECENT",
+                            "WORK", "ECONOMIC", "GROWTH", "INDUSTRY", "INNOVATION", "INFRASTRUCTURE", "REDUCED",
+                            "INEQUALITIES", "SUSTAINABLE", "CITIES", "COMMUNITIES", "RESPONSIBLE", "CONSUMPTION",
+                            "PRODUCTION", "CLIMATE", "ACTION", "LIFE", "BELOW", "WATER", "LIFE", "ON", "LAND",
+                            "PEACE", "JUSTICE", "STRONG", "INSTITUTIONS", "PARTNERSHIPS", "FOR", "THE", "GOALS"]
+
+            # Se a TAG potencial não for uma palavra comum, retorna ela
+            if potential_tag and not any(word == potential_tag for word in common_words):
+                return potential_tag
+            # Se a TAG potencial for uma das palavras comuns, mas for uma TAG válida que queremos extrair
+            if potential_tag in ["GENERALS", "NAVIGATION", "SYSTEM", "BYPASS", "ANTICOLLISION", "POSITIONING", "MC", "WHEELS", "PGV", "BATTERY", "LIFT"]:
+                return potential_tag
+
+        logger.warning(f"Nenhuma TAG de dispositivo encontrada para a descrição: '{description}'")
+        return None
+        """
+        Extrai a TAG do dispositivo associada a partir da descrição do alarme.
+        Prioriza padrões específicos e, se não encontrar, tenta padrões mais genéricos.
+        """
+        if pd.isna(description):
+            return None
+
+        description = str(description).upper()
+
+        # --- Padrões Específicos (Ordem importa: mais específicos primeiro) ---
+
+        # 1. Padrões de "COMMUNICATION FAILURE - [TAG]" ou "BOOTING [TAG]"
+        # Ex: 'SYSTEM PROFINET: 80FQ1 COMMUNICATION FAILURE - SCANNER FRONT' -> 'SCANNER FRONT'
+        # Ex: 'CAN OPEN: BOOTING POWERTRAIN' -> 'POWERTRAIN'
+        match_comm_boot = re.search(r'(?:COMMUNICATION FAILURE -|BOOTING)\s*([A-Z0-9\s-]+)$', description)
+        if match_comm_boot:
+            return match_comm_boot.group(1).strip()
+
+        # 2. Padrões de "WHEELS [FRONT/REAR] STEERING"
+        # Ex: 'WHEELS FRONT STEERING: RIGHT STROKE' -> 'WHEELS FRONT STEERING'
+        match_wheels_steering = re.search(r'^(WHEELS\s(?:FRONT|REAR)\sSTEERING)', description)
+        if match_wheels_steering:
+            return match_wheels_steering.group(1).strip()
+
         # 3. Padrões de TAGs conhecidas no início ou meio da descrição
         # Ex: 'SYSTEM PROFINET: 80FQ1...' -> '80FQ1'
         # Ex: 'NAVIGATION: ANTICOLLISION ON' -> 'ANTICOLLISION'

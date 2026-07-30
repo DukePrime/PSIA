@@ -124,3 +124,18 @@
 2026-07-30 01:04:17,256 - data_factory_logger - INFO - Extração e carregamento do CSV concluídos com sucesso.
 2026-07-30 01:04:17,256 - data_factory_logger - INFO - Conexão com o banco de dados fechada.
 2026-07-30 01:04:17,256 - data_factory_logger - INFO - Conexão com o banco de dados fechada.
+2026-07-30 01:19:41,902 - data_factory_logger - INFO - Iniciando extração de CSV do arquivo: D:\PSIA\PSIA\data_factory_project\data\raw_csvs\Lista_de_Alarmes_AGV.csv
+2026-07-30 01:19:41,902 - data_factory_logger - INFO - Conectando ao banco de dados: D:\PSIA\PSIA\data_factory_project\data\data_factory.db
+2026-07-30 01:19:41,902 - data_factory_logger - INFO - DBManager inicializado com banco de dados: D:\PSIA\PSIA\data_factory_project\data\data_factory.db
+2026-07-30 01:19:41,902 - data_factory_logger - INFO - Conectado ao banco de dados: D:\PSIA\PSIA\data_factory_project\data\data_factory.db
+2026-07-30 01:19:41,905 - data_factory_logger - INFO - Tabela 'sistemas_afetados' verificada/criada.
+2026-07-30 01:19:41,907 - data_factory_logger - INFO - Tabela 'dispositivos' verificada/criada.
+2026-07-30 01:19:41,909 - data_factory_logger - INFO - Tabela 'alarmes' verificada/criada.
+2026-07-30 01:19:41,910 - data_factory_logger - INFO - Todas as tabelas foram verificadas/criadas com sucesso.
+2026-07-30 01:19:41,910 - data_factory_logger - INFO - CSVExtractor inicializado.
+2026-07-30 01:19:41,910 - data_factory_logger - INFO - Lendo arquivo CSV: D:\PSIA\PSIA\data_factory_project\data\raw_csvs\Lista_de_Alarmes_AGV.csv
+2026-07-30 01:19:41,931 - data_factory_logger - INFO - 337 alarmes inseridos com sucesso.
+2026-07-30 01:19:41,932 - data_factory_logger - INFO - 337 registros inseridos na tabela 'alarmes'.
+2026-07-30 01:19:41,933 - data_factory_logger - INFO - Extração e carregamento do CSV concluídos com sucesso.
+2026-07-30 01:19:41,933 - data_factory_logger - INFO - Conexão com o banco de dados fechada.
+2026-07-30 01:19:41,933 - data_factory_logger - INFO - Conexão com o banco de dados fechada.
