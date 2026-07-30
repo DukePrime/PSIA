@@ -1,0 +1,2 @@
+2026-07-28 01:21:19,338 - src.utils.logger_config - INFO - Logging configurado. Logs serão salvos em: D:\PSIA\PSIA\data_factory_project\logs\app_20260728_012119.log
+2026-07-28 01:21:19,339 - __main__ - INFO - Banco de dados existente 'D:\PSIA\PSIA\data_factory_project\data\selettra_data_factory.db' removido.

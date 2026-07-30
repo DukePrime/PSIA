@@ -1,0 +1,17 @@
+2026-07-28 00:08:39,327 - src.utils.logger_config - INFO - Logging configurado. Logs serão salvos em: D:\PSIA\PSIA\data_factory_project\logs\app_20260728_000839.log
+2026-07-28 00:08:39,327 - __main__ - INFO - Iniciando csv_extractor.py como script principal.
+2026-07-28 00:08:39,329 - src.database.db_manager - INFO - DBManager inicializado. Caminho do banco de dados: D:\PSIA\PSIA\data_factory_project\data/selettra_data_factory.db
+2026-07-28 00:08:39,329 - src.database.db_manager - INFO - Conexão com o banco de dados estabelecida.
+2026-07-28 00:08:39,343 - src.database.db_manager - INFO - Todas as tabelas verificadas/criadas com sucesso.
+2026-07-28 00:08:39,344 - __main__ - INFO - Processando PDF 'E250905AGV001__AGV_LOGSTICO_NIBUS__MBB_R1V1.pdf' antes do CSV para garantir o ProjectID: E250905AGV001
+2026-07-28 00:08:39,345 - src.processors.pdf_extractor - INFO - Iniciando processamento do PDF: D:\PSIA\PSIA\data_factory_project\data/raw_pdfs\E250905AGV001__AGV_LOGSTICO_NIBUS__MBB_R1V1.pdf
+2026-07-28 00:08:39,345 - src.processors.pdf_extractor - ERROR - Arquivo PDF não encontrado: D:\PSIA\PSIA\data_factory_project\data/raw_pdfs\E250905AGV001__AGV_LOGSTICO_NIBUS__MBB_R1V1.pdf
+2026-07-28 00:08:39,345 - __main__ - ERROR - Falha crítica: Não foi possível processar o PDF 'E250905AGV001__AGV_LOGSTICO_NIBUS__MBB_R1V1.pdf'. O processamento do CSV pode falhar.
+2026-07-28 00:08:39,346 - __main__ - INFO - Iniciando processamento do CSV: D:\PSIA\PSIA\data_factory_project\data/raw_csvs\Lista_de_Alarmes_AGV.csv
+2026-07-28 00:08:39,346 - __main__ - WARNING - ProjectID 'E250905AGV001' do CSV 'Lista_de_Alarmes_AGV.csv' não encontrado na tabela Projects. Certifique-se de que o PDF correspondente foi processado primeiro.
+2026-07-28 00:08:39,359 - __main__ - ERROR - CSV 'Lista_de_Alarmes_AGV.csv' não contém todas as colunas esperadas. Colunas encontradas: Index(['tópico', 'id', 'classe', 'descrição', 'possíveis_causas',
+       'sugestão_de_correção'],
+      dtype='str'). Colunas esperadas: ['categoria', 'codigo', 'tipo', 'descricao', 'causa', 'solucao']
+2026-07-28 00:08:39,359 - __main__ - ERROR - Falha no processamento para Lista_de_Alarmes_AGV.csv.
+2026-07-28 00:08:39,360 - src.database.db_manager - INFO - Conexão com o banco de dados fechada.
+2026-07-28 00:08:39,360 - __main__ - INFO - csv_extractor.py finalizado.

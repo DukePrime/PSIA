@@ -1,0 +1,13 @@
+2026-07-28 00:50:45,062 - src.utils.logger_config - INFO - Logging configurado. Logs serão salvos em: D:\PSIA\PSIA\data_factory_project\logs\app_20260728_005045.log
+2026-07-28 00:50:45,062 - src.database.db_manager - INFO - DBManager inicializado com o banco de dados: D:\PSIA\PSIA\data_factory_project\data\selettra_data_factory.db
+2026-07-28 00:50:45,062 - src.processors.pdf_extractor - INFO - PDFExtractor inicializado.
+2026-07-28 00:50:45,063 - src.processors.pdf_extractor - ERROR - Não foi possível extrair ProjectID do nome do arquivo PDF: E250905.AGV.001 - AGV LOGÍSTICO ÔNIBUS - MBB_R1V1.pdf
+2026-07-28 00:50:45,063 - __main__ - ERROR - Falha crítica: Não foi possível processar o PDF 'E250905.AGV.001 - AGV LOGÍSTICO ÔNIBUS - MBB_R1V1.pdf'. O processamento do CSV pode falhar.
+2026-07-28 00:50:45,063 - __main__ - INFO - CSVExtractor inicializado.
+2026-07-28 00:50:45,063 - __main__ - INFO - Iniciando processamento do arquivo CSV: data\raw_csvs\Lista_de_Alarmes_AGV.csv
+2026-07-28 00:50:45,087 - __main__ - INFO - CSV 'Lista_de_Alarmes_AGV.csv' lido com sucesso usando delimitador ';' e encoding 'latin1'.
+2026-07-28 00:50:45,087 - __main__ - ERROR - CSV 'Lista_de_Alarmes_AGV.csv' não contém todas as colunas esperadas. Colunas encontradas: ['tpico', 'id', 'classe', 'descrio', 'possveis_causas', 'sugesto_de_correo']. Colunas esperadas: ['topico', 'id', 'classe', 'descricao', 'possiveis_causas', 'sugestao_de_correcao']
+2026-07-28 00:50:45,088 - __main__ - WARNING - Nenhum alarme válido extraído do CSV: Lista_de_Alarmes_AGV.csv.
+2026-07-28 00:50:45,088 - __main__ - ERROR - Falha no processamento para Lista_de_Alarmes_AGV.csv.
+2026-07-28 00:50:45,088 - src.database.db_manager - INFO - Conexão com o banco de dados fechada.
+2026-07-28 00:50:45,088 - __main__ - INFO - csv_extractor.py finalizado.

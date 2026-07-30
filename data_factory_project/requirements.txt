@@ -1,0 +1,5 @@
+streamlit==1.36.0
+pandas==2.2.2
+PyPDF2==2.12.1
+camelot-py==2.0.0
+ghostscript==0.7

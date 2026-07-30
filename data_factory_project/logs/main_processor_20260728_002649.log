@@ -1,0 +1,16 @@
+2026-07-28 00:26:49,563 - src.utils.logger_config - INFO - Logging configurado. Logs serão salvos em: D:\PSIA\PSIA\data_factory_project\logs\main_processor_20260728_002649.log
+2026-07-28 00:26:49,564 - __main__ - INFO - csv_extractor.py iniciado como script principal.
+2026-07-28 00:26:49,564 - __main__ - INFO - Banco de dados 'data/selettra_data_factory.db' removido para recriação.
+2026-07-28 00:26:49,565 - src.database.db_manager - INFO - Conexão com o banco de dados estabelecida: data/selettra_data_factory.db
+2026-07-28 00:26:49,575 - src.database.db_manager - INFO - Tabelas verificadas/criadas com sucesso.
+2026-07-28 00:26:49,575 - src.processors.pdf_extractor - INFO - PDFExtractor inicializado.
+2026-07-28 00:26:49,575 - __main__ - CRITICAL - Ocorreu um erro crítico no script principal: name 'os' is not defined
+Traceback (most recent call last):
+  File "D:\PSIA\PSIA\data_factory_project\src\processors\csv_extractor.py", line 175, in <module>
+    project_id_from_pdf = extract_project_id_from_filename(pdf_file)
+  File "D:\PSIA\PSIA\data_factory_project\src\utils\helpers.py", line 30, in extract_project_id_from_filename
+    base_name = os.path.splitext(os.path.basename(filename))[0]
+                ^^
+NameError: name 'os' is not defined. Did you forget to import 'os'?
+2026-07-28 00:26:49,577 - src.database.db_manager - INFO - Conexão com o banco de dados fechada.
+2026-07-28 00:26:49,577 - __main__ - INFO - csv_extractor.py finalizado.

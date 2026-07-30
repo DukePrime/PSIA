@@ -1,0 +1,2 @@
+2026-07-28 00:45:33,766 - src.utils.logger_config - INFO - Logging configurado. Logs serão salvos em: D:\PSIA\PSIA\data_factory_project\logs\main_processor_20260728_004533.log
+2026-07-28 00:45:33,768 - src.database.db_manager - INFO - DBManager inicializado com o banco de dados: D:\PSIA\PSIA\data_factory_project\data\selettra_data_factory.db

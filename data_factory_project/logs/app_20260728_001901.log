@@ -1,0 +1,693 @@
+2026-07-28 00:19:01,503 - src.utils.logger_config - INFO - Logging configurado. Logs serão salvos em: D:\PSIA\PSIA\data_factory_project\logs\app_20260728_001901.log
+2026-07-28 00:19:01,504 - src.utils.logger_config - INFO - Logging configurado. Logs serão salvos em: D:\PSIA\PSIA\data_factory_project\logs\app_20260728_001901.log
+2026-07-28 00:19:01,504 - src.utils.logger_config - INFO - Logging configurado. Logs serão salvos em: D:\PSIA\PSIA\data_factory_project\logs\app_20260728_001901.log
+2026-07-28 00:19:01,504 - __main__ - INFO - Iniciando csv_extractor.py como script principal.
+2026-07-28 00:19:01,505 - src.database.db_manager - INFO - DBManager inicializado. Caminho do banco de dados: D:\PSIA\PSIA\data_factory_project\data\selettra_data_factory.db
+2026-07-28 00:19:01,506 - src.database.db_manager - INFO - Conexão com o banco de dados estabelecida.
+2026-07-28 00:19:01,512 - src.database.db_manager - INFO - Todas as tabelas verificadas/criadas com sucesso.
+2026-07-28 00:19:01,513 - src.processors.pdf_extractor - INFO - PDFExtractor inicializado. Diretório de PDFs: D:\PSIA\PSIA\data_factory_project\data\raw_pdfs
+2026-07-28 00:19:01,514 - __main__ - INFO - Processando PDF 'E250905AGV001__AGV_LOGSTICO_NIBUS__MBB_R1V1.pdf' antes do CSV para garantir o ProjectID: E250905AGV001
+2026-07-28 00:19:01,514 - src.processors.pdf_extractor - ERROR - Arquivo PDF não encontrado: D:\PSIA\PSIA\data_factory_project\data\raw_pdfs\E250905AGV001__AGV_LOGSTICO_NIBUS__MBB_R1V1.pdf
+2026-07-28 00:19:01,514 - __main__ - ERROR - Falha crítica: Não foi possível processar o PDF 'E250905AGV001__AGV_LOGSTICO_NIBUS__MBB_R1V1.pdf'. O processamento do CSV pode falhar.
+2026-07-28 00:19:01,514 - __main__ - INFO - CSVExtractor inicializado. Diretório de CSVs: D:\PSIA\PSIA\data_factory_project\data\raw_csvs
+2026-07-28 00:19:01,514 - __main__ - INFO - Iniciando processamento do CSV: D:\PSIA\PSIA\data_factory_project\data\raw_csvs\Lista_de_Alarmes_AGV.csv para Project ID: E250905AGV001
+2026-07-28 00:19:01,515 - src.database.db_manager - ERROR - Erro ao buscar projeto 'E250905AGV001': no such column: project_id
+2026-07-28 00:19:01,515 - __main__ - WARNING - ProjectID 'E250905AGV001' do CSV 'Lista_de_Alarmes_AGV.csv' não encontrado na tabela Projects. Certifique-se de que o PDF correspondente foi processado primeiro.
+2026-07-28 00:19:01,527 - src.database.db_manager - ERROR - Erro ao inserir alarme '1' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,527 - __main__ - ERROR - Falha ao inserir alarme '1' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,527 - src.database.db_manager - ERROR - Erro ao inserir alarme '2' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,528 - __main__ - ERROR - Falha ao inserir alarme '2' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,528 - src.database.db_manager - ERROR - Erro ao inserir alarme '3' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,528 - __main__ - ERROR - Falha ao inserir alarme '3' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,528 - src.database.db_manager - ERROR - Erro ao inserir alarme '4' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,529 - __main__ - ERROR - Falha ao inserir alarme '4' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,529 - src.database.db_manager - ERROR - Erro ao inserir alarme '31' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,529 - __main__ - ERROR - Falha ao inserir alarme '31' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,530 - src.database.db_manager - ERROR - Erro ao inserir alarme '32' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,530 - __main__ - ERROR - Falha ao inserir alarme '32' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,530 - src.database.db_manager - ERROR - Erro ao inserir alarme '33' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,531 - __main__ - ERROR - Falha ao inserir alarme '33' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,531 - src.database.db_manager - ERROR - Erro ao inserir alarme '61' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,531 - __main__ - ERROR - Falha ao inserir alarme '61' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,532 - src.database.db_manager - ERROR - Erro ao inserir alarme '62' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,532 - __main__ - ERROR - Falha ao inserir alarme '62' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,533 - src.database.db_manager - ERROR - Erro ao inserir alarme '63' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,533 - __main__ - ERROR - Falha ao inserir alarme '63' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,534 - src.database.db_manager - ERROR - Erro ao inserir alarme '64' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,534 - __main__ - ERROR - Falha ao inserir alarme '64' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,534 - src.database.db_manager - ERROR - Erro ao inserir alarme '65' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,535 - __main__ - ERROR - Falha ao inserir alarme '65' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,535 - src.database.db_manager - ERROR - Erro ao inserir alarme '66' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,535 - __main__ - ERROR - Falha ao inserir alarme '66' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,536 - src.database.db_manager - ERROR - Erro ao inserir alarme '67' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,536 - __main__ - ERROR - Falha ao inserir alarme '67' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,537 - src.database.db_manager - ERROR - Erro ao inserir alarme '68' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,537 - __main__ - ERROR - Falha ao inserir alarme '68' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,537 - src.database.db_manager - ERROR - Erro ao inserir alarme '69' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,537 - __main__ - ERROR - Falha ao inserir alarme '69' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,538 - src.database.db_manager - ERROR - Erro ao inserir alarme '70' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,538 - __main__ - ERROR - Falha ao inserir alarme '70' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,538 - src.database.db_manager - ERROR - Erro ao inserir alarme '71' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,538 - __main__ - ERROR - Falha ao inserir alarme '71' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,539 - src.database.db_manager - ERROR - Erro ao inserir alarme '72' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,539 - __main__ - ERROR - Falha ao inserir alarme '72' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,539 - src.database.db_manager - ERROR - Erro ao inserir alarme '91' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,539 - __main__ - ERROR - Falha ao inserir alarme '91' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,540 - src.database.db_manager - ERROR - Erro ao inserir alarme '92' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,540 - __main__ - ERROR - Falha ao inserir alarme '92' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,540 - src.database.db_manager - ERROR - Erro ao inserir alarme '93' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,540 - __main__ - ERROR - Falha ao inserir alarme '93' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,541 - src.database.db_manager - ERROR - Erro ao inserir alarme '94' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,541 - __main__ - ERROR - Falha ao inserir alarme '94' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,541 - src.database.db_manager - ERROR - Erro ao inserir alarme '95' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,542 - __main__ - ERROR - Falha ao inserir alarme '95' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,542 - src.database.db_manager - ERROR - Erro ao inserir alarme '96' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,542 - __main__ - ERROR - Falha ao inserir alarme '96' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,542 - src.database.db_manager - ERROR - Erro ao inserir alarme '106' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,543 - __main__ - ERROR - Falha ao inserir alarme '106' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,543 - src.database.db_manager - ERROR - Erro ao inserir alarme '107' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,543 - __main__ - ERROR - Falha ao inserir alarme '107' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,544 - src.database.db_manager - ERROR - Erro ao inserir alarme '108' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,544 - __main__ - ERROR - Falha ao inserir alarme '108' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,544 - src.database.db_manager - ERROR - Erro ao inserir alarme '109' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,544 - __main__ - ERROR - Falha ao inserir alarme '109' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,545 - src.database.db_manager - ERROR - Erro ao inserir alarme '110' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,545 - __main__ - ERROR - Falha ao inserir alarme '110' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,545 - src.database.db_manager - ERROR - Erro ao inserir alarme '111' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,545 - __main__ - ERROR - Falha ao inserir alarme '111' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,546 - src.database.db_manager - ERROR - Erro ao inserir alarme '112' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,546 - __main__ - ERROR - Falha ao inserir alarme '112' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,546 - src.database.db_manager - ERROR - Erro ao inserir alarme '113' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,547 - __main__ - ERROR - Falha ao inserir alarme '113' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,547 - src.database.db_manager - ERROR - Erro ao inserir alarme '120' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,547 - __main__ - ERROR - Falha ao inserir alarme '120' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,548 - src.database.db_manager - ERROR - Erro ao inserir alarme '121' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,548 - __main__ - ERROR - Falha ao inserir alarme '121' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,548 - src.database.db_manager - ERROR - Erro ao inserir alarme '122' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,549 - __main__ - ERROR - Falha ao inserir alarme '122' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,549 - src.database.db_manager - ERROR - Erro ao inserir alarme '180' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,549 - __main__ - ERROR - Falha ao inserir alarme '180' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,550 - src.database.db_manager - ERROR - Erro ao inserir alarme '181' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,550 - __main__ - ERROR - Falha ao inserir alarme '181' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,550 - src.database.db_manager - ERROR - Erro ao inserir alarme '182' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,550 - __main__ - ERROR - Falha ao inserir alarme '182' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,551 - src.database.db_manager - ERROR - Erro ao inserir alarme '183' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,551 - __main__ - ERROR - Falha ao inserir alarme '183' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,551 - src.database.db_manager - ERROR - Erro ao inserir alarme '210' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,551 - __main__ - ERROR - Falha ao inserir alarme '210' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,552 - src.database.db_manager - ERROR - Erro ao inserir alarme '211' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,552 - __main__ - ERROR - Falha ao inserir alarme '211' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,552 - src.database.db_manager - ERROR - Erro ao inserir alarme '212' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,552 - __main__ - ERROR - Falha ao inserir alarme '212' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,553 - src.database.db_manager - ERROR - Erro ao inserir alarme '213' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,553 - __main__ - ERROR - Falha ao inserir alarme '213' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,553 - src.database.db_manager - ERROR - Erro ao inserir alarme '214' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,553 - __main__ - ERROR - Falha ao inserir alarme '214' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,554 - src.database.db_manager - ERROR - Erro ao inserir alarme '215' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,554 - __main__ - ERROR - Falha ao inserir alarme '215' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,554 - src.database.db_manager - ERROR - Erro ao inserir alarme '216' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,554 - __main__ - ERROR - Falha ao inserir alarme '216' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,555 - src.database.db_manager - ERROR - Erro ao inserir alarme '240' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,555 - __main__ - ERROR - Falha ao inserir alarme '240' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,555 - src.database.db_manager - ERROR - Erro ao inserir alarme '241' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,555 - __main__ - ERROR - Falha ao inserir alarme '241' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,556 - src.database.db_manager - ERROR - Erro ao inserir alarme '242' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,556 - __main__ - ERROR - Falha ao inserir alarme '242' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,556 - src.database.db_manager - ERROR - Erro ao inserir alarme '243' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,556 - __main__ - ERROR - Falha ao inserir alarme '243' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,557 - src.database.db_manager - ERROR - Erro ao inserir alarme '244' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,557 - __main__ - ERROR - Falha ao inserir alarme '244' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,557 - src.database.db_manager - ERROR - Erro ao inserir alarme '245' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,557 - __main__ - ERROR - Falha ao inserir alarme '245' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,558 - src.database.db_manager - ERROR - Erro ao inserir alarme '270' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,558 - __main__ - ERROR - Falha ao inserir alarme '270' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,558 - src.database.db_manager - ERROR - Erro ao inserir alarme '271' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,558 - __main__ - ERROR - Falha ao inserir alarme '271' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,559 - src.database.db_manager - ERROR - Erro ao inserir alarme '300' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,559 - __main__ - ERROR - Falha ao inserir alarme '300' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,559 - src.database.db_manager - ERROR - Erro ao inserir alarme '301' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,559 - __main__ - ERROR - Falha ao inserir alarme '301' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,560 - src.database.db_manager - ERROR - Erro ao inserir alarme '302' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,560 - __main__ - ERROR - Falha ao inserir alarme '302' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,560 - src.database.db_manager - ERROR - Erro ao inserir alarme '330' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,561 - __main__ - ERROR - Falha ao inserir alarme '330' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,561 - src.database.db_manager - ERROR - Erro ao inserir alarme '331' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,561 - __main__ - ERROR - Falha ao inserir alarme '331' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,561 - src.database.db_manager - ERROR - Erro ao inserir alarme '332' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,562 - __main__ - ERROR - Falha ao inserir alarme '332' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,562 - src.database.db_manager - ERROR - Erro ao inserir alarme '360' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,562 - __main__ - ERROR - Falha ao inserir alarme '360' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,562 - src.database.db_manager - ERROR - Erro ao inserir alarme '361' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,562 - __main__ - ERROR - Falha ao inserir alarme '361' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,563 - src.database.db_manager - ERROR - Erro ao inserir alarme '362' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,563 - __main__ - ERROR - Falha ao inserir alarme '362' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,563 - src.database.db_manager - ERROR - Erro ao inserir alarme '363' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,563 - __main__ - ERROR - Falha ao inserir alarme '363' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,564 - src.database.db_manager - ERROR - Erro ao inserir alarme '364' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,564 - __main__ - ERROR - Falha ao inserir alarme '364' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,564 - src.database.db_manager - ERROR - Erro ao inserir alarme '365' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,564 - __main__ - ERROR - Falha ao inserir alarme '365' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,565 - src.database.db_manager - ERROR - Erro ao inserir alarme '366' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,565 - __main__ - ERROR - Falha ao inserir alarme '366' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,566 - src.database.db_manager - ERROR - Erro ao inserir alarme '367' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,566 - __main__ - ERROR - Falha ao inserir alarme '367' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,566 - src.database.db_manager - ERROR - Erro ao inserir alarme '368' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,566 - __main__ - ERROR - Falha ao inserir alarme '368' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,566 - src.database.db_manager - ERROR - Erro ao inserir alarme '369' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,567 - __main__ - ERROR - Falha ao inserir alarme '369' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,567 - src.database.db_manager - ERROR - Erro ao inserir alarme '370' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,567 - __main__ - ERROR - Falha ao inserir alarme '370' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,567 - src.database.db_manager - ERROR - Erro ao inserir alarme '371' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,567 - __main__ - ERROR - Falha ao inserir alarme '371' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,567 - src.database.db_manager - ERROR - Erro ao inserir alarme '372' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,567 - __main__ - ERROR - Falha ao inserir alarme '372' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,568 - src.database.db_manager - ERROR - Erro ao inserir alarme '373' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,568 - __main__ - ERROR - Falha ao inserir alarme '373' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,568 - src.database.db_manager - ERROR - Erro ao inserir alarme '374' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,568 - __main__ - ERROR - Falha ao inserir alarme '374' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,568 - src.database.db_manager - ERROR - Erro ao inserir alarme '375' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,568 - __main__ - ERROR - Falha ao inserir alarme '375' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,569 - src.database.db_manager - ERROR - Erro ao inserir alarme '376' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,569 - __main__ - ERROR - Falha ao inserir alarme '376' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,569 - src.database.db_manager - ERROR - Erro ao inserir alarme '377' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,569 - __main__ - ERROR - Falha ao inserir alarme '377' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,569 - src.database.db_manager - ERROR - Erro ao inserir alarme '378' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,569 - __main__ - ERROR - Falha ao inserir alarme '378' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,570 - src.database.db_manager - ERROR - Erro ao inserir alarme '379' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,570 - __main__ - ERROR - Falha ao inserir alarme '379' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,570 - src.database.db_manager - ERROR - Erro ao inserir alarme '380' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,570 - __main__ - ERROR - Falha ao inserir alarme '380' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,570 - src.database.db_manager - ERROR - Erro ao inserir alarme '381' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,570 - __main__ - ERROR - Falha ao inserir alarme '381' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,571 - src.database.db_manager - ERROR - Erro ao inserir alarme '382' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,571 - __main__ - ERROR - Falha ao inserir alarme '382' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,571 - src.database.db_manager - ERROR - Erro ao inserir alarme '383' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,571 - __main__ - ERROR - Falha ao inserir alarme '383' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,571 - src.database.db_manager - ERROR - Erro ao inserir alarme '384' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,572 - __main__ - ERROR - Falha ao inserir alarme '384' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,572 - src.database.db_manager - ERROR - Erro ao inserir alarme '385' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,572 - __main__ - ERROR - Falha ao inserir alarme '385' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,572 - src.database.db_manager - ERROR - Erro ao inserir alarme '386' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,572 - __main__ - ERROR - Falha ao inserir alarme '386' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,573 - src.database.db_manager - ERROR - Erro ao inserir alarme '387' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,573 - __main__ - ERROR - Falha ao inserir alarme '387' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,573 - src.database.db_manager - ERROR - Erro ao inserir alarme '388' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,573 - __main__ - ERROR - Falha ao inserir alarme '388' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,573 - src.database.db_manager - ERROR - Erro ao inserir alarme '389' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,574 - __main__ - ERROR - Falha ao inserir alarme '389' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,574 - src.database.db_manager - ERROR - Erro ao inserir alarme '390' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,574 - __main__ - ERROR - Falha ao inserir alarme '390' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,574 - src.database.db_manager - ERROR - Erro ao inserir alarme '391' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,574 - __main__ - ERROR - Falha ao inserir alarme '391' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,575 - src.database.db_manager - ERROR - Erro ao inserir alarme '392' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,575 - __main__ - ERROR - Falha ao inserir alarme '392' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,575 - src.database.db_manager - ERROR - Erro ao inserir alarme '393' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,575 - __main__ - ERROR - Falha ao inserir alarme '393' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,575 - src.database.db_manager - ERROR - Erro ao inserir alarme '394' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,575 - __main__ - ERROR - Falha ao inserir alarme '394' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,576 - src.database.db_manager - ERROR - Erro ao inserir alarme '395' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,576 - __main__ - ERROR - Falha ao inserir alarme '395' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,577 - src.database.db_manager - ERROR - Erro ao inserir alarme '396' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,577 - __main__ - ERROR - Falha ao inserir alarme '396' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,577 - src.database.db_manager - ERROR - Erro ao inserir alarme '397' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,578 - __main__ - ERROR - Falha ao inserir alarme '397' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,578 - src.database.db_manager - ERROR - Erro ao inserir alarme '398' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,578 - __main__ - ERROR - Falha ao inserir alarme '398' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,579 - src.database.db_manager - ERROR - Erro ao inserir alarme '399' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,579 - __main__ - ERROR - Falha ao inserir alarme '399' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,579 - src.database.db_manager - ERROR - Erro ao inserir alarme '400' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,580 - __main__ - ERROR - Falha ao inserir alarme '400' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,580 - src.database.db_manager - ERROR - Erro ao inserir alarme '401' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,580 - __main__ - ERROR - Falha ao inserir alarme '401' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,580 - src.database.db_manager - ERROR - Erro ao inserir alarme '402' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,580 - __main__ - ERROR - Falha ao inserir alarme '402' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,581 - src.database.db_manager - ERROR - Erro ao inserir alarme '403' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,581 - __main__ - ERROR - Falha ao inserir alarme '403' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,581 - src.database.db_manager - ERROR - Erro ao inserir alarme '404' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,581 - __main__ - ERROR - Falha ao inserir alarme '404' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,582 - src.database.db_manager - ERROR - Erro ao inserir alarme '405' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,582 - __main__ - ERROR - Falha ao inserir alarme '405' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,582 - src.database.db_manager - ERROR - Erro ao inserir alarme '406' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,582 - __main__ - ERROR - Falha ao inserir alarme '406' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,582 - src.database.db_manager - ERROR - Erro ao inserir alarme '407' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,583 - __main__ - ERROR - Falha ao inserir alarme '407' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,583 - src.database.db_manager - ERROR - Erro ao inserir alarme '408' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,583 - __main__ - ERROR - Falha ao inserir alarme '408' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,583 - src.database.db_manager - ERROR - Erro ao inserir alarme '409' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,583 - __main__ - ERROR - Falha ao inserir alarme '409' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,584 - src.database.db_manager - ERROR - Erro ao inserir alarme '410' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,584 - __main__ - ERROR - Falha ao inserir alarme '410' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,584 - src.database.db_manager - ERROR - Erro ao inserir alarme '411' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,584 - __main__ - ERROR - Falha ao inserir alarme '411' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,585 - src.database.db_manager - ERROR - Erro ao inserir alarme '412' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,585 - __main__ - ERROR - Falha ao inserir alarme '412' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,585 - src.database.db_manager - ERROR - Erro ao inserir alarme '413' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,585 - __main__ - ERROR - Falha ao inserir alarme '413' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,585 - src.database.db_manager - ERROR - Erro ao inserir alarme '414' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,586 - __main__ - ERROR - Falha ao inserir alarme '414' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,586 - src.database.db_manager - ERROR - Erro ao inserir alarme '415' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,586 - __main__ - ERROR - Falha ao inserir alarme '415' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,586 - src.database.db_manager - ERROR - Erro ao inserir alarme '416' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,586 - __main__ - ERROR - Falha ao inserir alarme '416' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,587 - src.database.db_manager - ERROR - Erro ao inserir alarme '417' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,587 - __main__ - ERROR - Falha ao inserir alarme '417' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,587 - src.database.db_manager - ERROR - Erro ao inserir alarme '418' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,587 - __main__ - ERROR - Falha ao inserir alarme '418' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,587 - src.database.db_manager - ERROR - Erro ao inserir alarme '419' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,587 - __main__ - ERROR - Falha ao inserir alarme '419' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,588 - src.database.db_manager - ERROR - Erro ao inserir alarme '420' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,588 - __main__ - ERROR - Falha ao inserir alarme '420' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,588 - src.database.db_manager - ERROR - Erro ao inserir alarme '421' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,588 - __main__ - ERROR - Falha ao inserir alarme '421' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,588 - src.database.db_manager - ERROR - Erro ao inserir alarme '422' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,588 - __main__ - ERROR - Falha ao inserir alarme '422' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,589 - src.database.db_manager - ERROR - Erro ao inserir alarme '423' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,589 - __main__ - ERROR - Falha ao inserir alarme '423' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,589 - src.database.db_manager - ERROR - Erro ao inserir alarme '424' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,589 - __main__ - ERROR - Falha ao inserir alarme '424' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,589 - src.database.db_manager - ERROR - Erro ao inserir alarme '425' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,589 - __main__ - ERROR - Falha ao inserir alarme '425' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,589 - src.database.db_manager - ERROR - Erro ao inserir alarme '426' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,590 - __main__ - ERROR - Falha ao inserir alarme '426' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,590 - src.database.db_manager - ERROR - Erro ao inserir alarme '427' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,590 - __main__ - ERROR - Falha ao inserir alarme '427' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,590 - src.database.db_manager - ERROR - Erro ao inserir alarme '428' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,590 - __main__ - ERROR - Falha ao inserir alarme '428' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,590 - src.database.db_manager - ERROR - Erro ao inserir alarme '438' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,591 - __main__ - ERROR - Falha ao inserir alarme '438' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,591 - src.database.db_manager - ERROR - Erro ao inserir alarme '439' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,591 - __main__ - ERROR - Falha ao inserir alarme '439' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,591 - src.database.db_manager - ERROR - Erro ao inserir alarme '440' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,591 - __main__ - ERROR - Falha ao inserir alarme '440' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,591 - src.database.db_manager - ERROR - Erro ao inserir alarme '441' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,591 - __main__ - ERROR - Falha ao inserir alarme '441' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,592 - src.database.db_manager - ERROR - Erro ao inserir alarme '442' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,592 - __main__ - ERROR - Falha ao inserir alarme '442' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,592 - src.database.db_manager - ERROR - Erro ao inserir alarme '443' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,592 - __main__ - ERROR - Falha ao inserir alarme '443' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,592 - src.database.db_manager - ERROR - Erro ao inserir alarme '444' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,592 - __main__ - ERROR - Falha ao inserir alarme '444' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,593 - src.database.db_manager - ERROR - Erro ao inserir alarme '445' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,593 - __main__ - ERROR - Falha ao inserir alarme '445' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,593 - src.database.db_manager - ERROR - Erro ao inserir alarme '446' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,593 - __main__ - ERROR - Falha ao inserir alarme '446' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,594 - src.database.db_manager - ERROR - Erro ao inserir alarme '447' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,594 - __main__ - ERROR - Falha ao inserir alarme '447' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,594 - src.database.db_manager - ERROR - Erro ao inserir alarme '448' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,594 - __main__ - ERROR - Falha ao inserir alarme '448' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,594 - src.database.db_manager - ERROR - Erro ao inserir alarme '449' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,594 - __main__ - ERROR - Falha ao inserir alarme '449' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,595 - src.database.db_manager - ERROR - Erro ao inserir alarme '450' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,595 - __main__ - ERROR - Falha ao inserir alarme '450' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,595 - src.database.db_manager - ERROR - Erro ao inserir alarme '451' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,595 - __main__ - ERROR - Falha ao inserir alarme '451' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,595 - src.database.db_manager - ERROR - Erro ao inserir alarme '452' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,595 - __main__ - ERROR - Falha ao inserir alarme '452' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,596 - src.database.db_manager - ERROR - Erro ao inserir alarme '453' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,596 - __main__ - ERROR - Falha ao inserir alarme '453' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,596 - src.database.db_manager - ERROR - Erro ao inserir alarme '454' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,596 - __main__ - ERROR - Falha ao inserir alarme '454' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,596 - src.database.db_manager - ERROR - Erro ao inserir alarme '455' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,596 - __main__ - ERROR - Falha ao inserir alarme '455' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,596 - src.database.db_manager - ERROR - Erro ao inserir alarme '456' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,597 - __main__ - ERROR - Falha ao inserir alarme '456' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,597 - src.database.db_manager - ERROR - Erro ao inserir alarme '457' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,597 - __main__ - ERROR - Falha ao inserir alarme '457' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,597 - src.database.db_manager - ERROR - Erro ao inserir alarme '458' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,597 - __main__ - ERROR - Falha ao inserir alarme '458' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,597 - src.database.db_manager - ERROR - Erro ao inserir alarme '459' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,598 - __main__ - ERROR - Falha ao inserir alarme '459' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,598 - src.database.db_manager - ERROR - Erro ao inserir alarme '460' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,598 - __main__ - ERROR - Falha ao inserir alarme '460' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,598 - src.database.db_manager - ERROR - Erro ao inserir alarme '461' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,598 - __main__ - ERROR - Falha ao inserir alarme '461' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,598 - src.database.db_manager - ERROR - Erro ao inserir alarme '462' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,598 - __main__ - ERROR - Falha ao inserir alarme '462' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,599 - src.database.db_manager - ERROR - Erro ao inserir alarme '463' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,599 - __main__ - ERROR - Falha ao inserir alarme '463' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,599 - src.database.db_manager - ERROR - Erro ao inserir alarme '464' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,599 - __main__ - ERROR - Falha ao inserir alarme '464' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,599 - src.database.db_manager - ERROR - Erro ao inserir alarme '465' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,600 - __main__ - ERROR - Falha ao inserir alarme '465' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,600 - src.database.db_manager - ERROR - Erro ao inserir alarme '466' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,600 - __main__ - ERROR - Falha ao inserir alarme '466' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,600 - src.database.db_manager - ERROR - Erro ao inserir alarme '467' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,600 - __main__ - ERROR - Falha ao inserir alarme '467' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,601 - src.database.db_manager - ERROR - Erro ao inserir alarme '468' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,601 - __main__ - ERROR - Falha ao inserir alarme '468' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,601 - src.database.db_manager - ERROR - Erro ao inserir alarme '469' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,601 - __main__ - ERROR - Falha ao inserir alarme '469' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,601 - src.database.db_manager - ERROR - Erro ao inserir alarme '470' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,601 - __main__ - ERROR - Falha ao inserir alarme '470' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,602 - src.database.db_manager - ERROR - Erro ao inserir alarme '471' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,602 - __main__ - ERROR - Falha ao inserir alarme '471' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,602 - src.database.db_manager - ERROR - Erro ao inserir alarme '472' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,602 - __main__ - ERROR - Falha ao inserir alarme '472' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,602 - src.database.db_manager - ERROR - Erro ao inserir alarme '473' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,602 - __main__ - ERROR - Falha ao inserir alarme '473' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,603 - src.database.db_manager - ERROR - Erro ao inserir alarme '474' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,603 - __main__ - ERROR - Falha ao inserir alarme '474' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,603 - src.database.db_manager - ERROR - Erro ao inserir alarme '475' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,603 - __main__ - ERROR - Falha ao inserir alarme '475' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,603 - src.database.db_manager - ERROR - Erro ao inserir alarme '476' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,603 - __main__ - ERROR - Falha ao inserir alarme '476' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,604 - src.database.db_manager - ERROR - Erro ao inserir alarme '477' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,604 - __main__ - ERROR - Falha ao inserir alarme '477' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,604 - src.database.db_manager - ERROR - Erro ao inserir alarme '478' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,604 - __main__ - ERROR - Falha ao inserir alarme '478' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,604 - src.database.db_manager - ERROR - Erro ao inserir alarme '479' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,604 - __main__ - ERROR - Falha ao inserir alarme '479' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,604 - src.database.db_manager - ERROR - Erro ao inserir alarme '480' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,605 - __main__ - ERROR - Falha ao inserir alarme '480' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,605 - src.database.db_manager - ERROR - Erro ao inserir alarme '481' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,605 - __main__ - ERROR - Falha ao inserir alarme '481' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,605 - src.database.db_manager - ERROR - Erro ao inserir alarme '482' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,605 - __main__ - ERROR - Falha ao inserir alarme '482' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,605 - src.database.db_manager - ERROR - Erro ao inserir alarme '483' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,605 - __main__ - ERROR - Falha ao inserir alarme '483' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,606 - src.database.db_manager - ERROR - Erro ao inserir alarme '484' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,606 - __main__ - ERROR - Falha ao inserir alarme '484' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,606 - src.database.db_manager - ERROR - Erro ao inserir alarme '485' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,606 - __main__ - ERROR - Falha ao inserir alarme '485' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,606 - src.database.db_manager - ERROR - Erro ao inserir alarme '486' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,607 - __main__ - ERROR - Falha ao inserir alarme '486' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,607 - src.database.db_manager - ERROR - Erro ao inserir alarme '487' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,607 - __main__ - ERROR - Falha ao inserir alarme '487' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,607 - src.database.db_manager - ERROR - Erro ao inserir alarme '488' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,607 - __main__ - ERROR - Falha ao inserir alarme '488' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,608 - src.database.db_manager - ERROR - Erro ao inserir alarme '489' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,608 - __main__ - ERROR - Falha ao inserir alarme '489' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,608 - src.database.db_manager - ERROR - Erro ao inserir alarme '490' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,608 - __main__ - ERROR - Falha ao inserir alarme '490' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,608 - src.database.db_manager - ERROR - Erro ao inserir alarme '491' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,608 - __main__ - ERROR - Falha ao inserir alarme '491' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,609 - src.database.db_manager - ERROR - Erro ao inserir alarme '492' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,609 - __main__ - ERROR - Falha ao inserir alarme '492' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,609 - src.database.db_manager - ERROR - Erro ao inserir alarme '493' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,609 - __main__ - ERROR - Falha ao inserir alarme '493' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,609 - src.database.db_manager - ERROR - Erro ao inserir alarme '494' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,609 - __main__ - ERROR - Falha ao inserir alarme '494' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,609 - src.database.db_manager - ERROR - Erro ao inserir alarme '495' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,610 - __main__ - ERROR - Falha ao inserir alarme '495' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,610 - src.database.db_manager - ERROR - Erro ao inserir alarme '496' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,610 - __main__ - ERROR - Falha ao inserir alarme '496' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,610 - src.database.db_manager - ERROR - Erro ao inserir alarme '497' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,610 - __main__ - ERROR - Falha ao inserir alarme '497' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,610 - src.database.db_manager - ERROR - Erro ao inserir alarme '498' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,610 - __main__ - ERROR - Falha ao inserir alarme '498' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,611 - src.database.db_manager - ERROR - Erro ao inserir alarme '500' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,611 - __main__ - ERROR - Falha ao inserir alarme '500' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,611 - src.database.db_manager - ERROR - Erro ao inserir alarme '501' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,611 - __main__ - ERROR - Falha ao inserir alarme '501' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,611 - src.database.db_manager - ERROR - Erro ao inserir alarme '502' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,611 - __main__ - ERROR - Falha ao inserir alarme '502' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,611 - src.database.db_manager - ERROR - Erro ao inserir alarme '503' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,612 - __main__ - ERROR - Falha ao inserir alarme '503' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,612 - src.database.db_manager - ERROR - Erro ao inserir alarme '504' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,612 - __main__ - ERROR - Falha ao inserir alarme '504' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,612 - src.database.db_manager - ERROR - Erro ao inserir alarme '505' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,612 - __main__ - ERROR - Falha ao inserir alarme '505' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,612 - src.database.db_manager - ERROR - Erro ao inserir alarme '506' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,612 - __main__ - ERROR - Falha ao inserir alarme '506' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,613 - src.database.db_manager - ERROR - Erro ao inserir alarme '507' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,613 - __main__ - ERROR - Falha ao inserir alarme '507' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,613 - src.database.db_manager - ERROR - Erro ao inserir alarme '508' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,613 - __main__ - ERROR - Falha ao inserir alarme '508' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,614 - src.database.db_manager - ERROR - Erro ao inserir alarme '509' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,614 - __main__ - ERROR - Falha ao inserir alarme '509' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,614 - src.database.db_manager - ERROR - Erro ao inserir alarme '532' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,614 - __main__ - ERROR - Falha ao inserir alarme '532' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,614 - src.database.db_manager - ERROR - Erro ao inserir alarme '533' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,614 - __main__ - ERROR - Falha ao inserir alarme '533' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,615 - src.database.db_manager - ERROR - Erro ao inserir alarme '562' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,615 - __main__ - ERROR - Falha ao inserir alarme '562' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,615 - src.database.db_manager - ERROR - Erro ao inserir alarme '563' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,615 - __main__ - ERROR - Falha ao inserir alarme '563' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,615 - src.database.db_manager - ERROR - Erro ao inserir alarme '592' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,615 - __main__ - ERROR - Falha ao inserir alarme '592' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,616 - src.database.db_manager - ERROR - Erro ao inserir alarme '593' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,616 - __main__ - ERROR - Falha ao inserir alarme '593' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,616 - src.database.db_manager - ERROR - Erro ao inserir alarme '622' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,616 - __main__ - ERROR - Falha ao inserir alarme '622' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,616 - src.database.db_manager - ERROR - Erro ao inserir alarme '623' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,616 - __main__ - ERROR - Falha ao inserir alarme '623' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,617 - src.database.db_manager - ERROR - Erro ao inserir alarme '652' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,617 - __main__ - ERROR - Falha ao inserir alarme '652' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,617 - src.database.db_manager - ERROR - Erro ao inserir alarme '653' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,617 - __main__ - ERROR - Falha ao inserir alarme '653' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,617 - src.database.db_manager - ERROR - Erro ao inserir alarme '654' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,617 - __main__ - ERROR - Falha ao inserir alarme '654' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,618 - src.database.db_manager - ERROR - Erro ao inserir alarme '655' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,618 - __main__ - ERROR - Falha ao inserir alarme '655' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,618 - src.database.db_manager - ERROR - Erro ao inserir alarme '656' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,618 - __main__ - ERROR - Falha ao inserir alarme '656' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,618 - src.database.db_manager - ERROR - Erro ao inserir alarme '657' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,618 - __main__ - ERROR - Falha ao inserir alarme '657' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,618 - src.database.db_manager - ERROR - Erro ao inserir alarme '658' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,618 - __main__ - ERROR - Falha ao inserir alarme '658' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,619 - src.database.db_manager - ERROR - Erro ao inserir alarme '659' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,619 - __main__ - ERROR - Falha ao inserir alarme '659' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,619 - src.database.db_manager - ERROR - Erro ao inserir alarme '660' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,619 - __main__ - ERROR - Falha ao inserir alarme '660' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,619 - src.database.db_manager - ERROR - Erro ao inserir alarme '661' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,619 - __main__ - ERROR - Falha ao inserir alarme '661' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,620 - src.database.db_manager - ERROR - Erro ao inserir alarme '662' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,620 - __main__ - ERROR - Falha ao inserir alarme '662' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,620 - src.database.db_manager - ERROR - Erro ao inserir alarme '663' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,620 - __main__ - ERROR - Falha ao inserir alarme '663' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,620 - src.database.db_manager - ERROR - Erro ao inserir alarme '664' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,620 - __main__ - ERROR - Falha ao inserir alarme '664' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,621 - src.database.db_manager - ERROR - Erro ao inserir alarme '665' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,621 - __main__ - ERROR - Falha ao inserir alarme '665' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,621 - src.database.db_manager - ERROR - Erro ao inserir alarme '666' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,621 - __main__ - ERROR - Falha ao inserir alarme '666' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,622 - src.database.db_manager - ERROR - Erro ao inserir alarme '667' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,622 - __main__ - ERROR - Falha ao inserir alarme '667' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,622 - src.database.db_manager - ERROR - Erro ao inserir alarme '668' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,622 - __main__ - ERROR - Falha ao inserir alarme '668' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,622 - src.database.db_manager - ERROR - Erro ao inserir alarme '669' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,622 - __main__ - ERROR - Falha ao inserir alarme '669' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,622 - src.database.db_manager - ERROR - Erro ao inserir alarme '670' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,622 - __main__ - ERROR - Falha ao inserir alarme '670' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,623 - src.database.db_manager - ERROR - Erro ao inserir alarme '671' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,623 - __main__ - ERROR - Falha ao inserir alarme '671' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,623 - src.database.db_manager - ERROR - Erro ao inserir alarme '672' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,623 - __main__ - ERROR - Falha ao inserir alarme '672' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,623 - src.database.db_manager - ERROR - Erro ao inserir alarme '673' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,623 - __main__ - ERROR - Falha ao inserir alarme '673' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,624 - src.database.db_manager - ERROR - Erro ao inserir alarme '674' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,624 - __main__ - ERROR - Falha ao inserir alarme '674' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,624 - src.database.db_manager - ERROR - Erro ao inserir alarme '675' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,624 - __main__ - ERROR - Falha ao inserir alarme '675' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,624 - src.database.db_manager - ERROR - Erro ao inserir alarme '676' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,624 - __main__ - ERROR - Falha ao inserir alarme '676' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,624 - src.database.db_manager - ERROR - Erro ao inserir alarme '677' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,625 - __main__ - ERROR - Falha ao inserir alarme '677' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,625 - src.database.db_manager - ERROR - Erro ao inserir alarme '678' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,625 - __main__ - ERROR - Falha ao inserir alarme '678' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,625 - src.database.db_manager - ERROR - Erro ao inserir alarme '679' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,625 - __main__ - ERROR - Falha ao inserir alarme '679' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,625 - src.database.db_manager - ERROR - Erro ao inserir alarme '680' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,625 - __main__ - ERROR - Falha ao inserir alarme '680' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,626 - src.database.db_manager - ERROR - Erro ao inserir alarme '681' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,626 - __main__ - ERROR - Falha ao inserir alarme '681' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,626 - src.database.db_manager - ERROR - Erro ao inserir alarme '682' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,626 - __main__ - ERROR - Falha ao inserir alarme '682' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,626 - src.database.db_manager - ERROR - Erro ao inserir alarme '683' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,626 - __main__ - ERROR - Falha ao inserir alarme '683' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,626 - src.database.db_manager - ERROR - Erro ao inserir alarme '684' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,626 - __main__ - ERROR - Falha ao inserir alarme '684' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,627 - src.database.db_manager - ERROR - Erro ao inserir alarme '685' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,627 - __main__ - ERROR - Falha ao inserir alarme '685' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,627 - src.database.db_manager - ERROR - Erro ao inserir alarme '686' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,627 - __main__ - ERROR - Falha ao inserir alarme '686' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,627 - src.database.db_manager - ERROR - Erro ao inserir alarme '687' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,628 - __main__ - ERROR - Falha ao inserir alarme '687' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,628 - src.database.db_manager - ERROR - Erro ao inserir alarme '688' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,628 - __main__ - ERROR - Falha ao inserir alarme '688' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,628 - src.database.db_manager - ERROR - Erro ao inserir alarme '689' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,628 - __main__ - ERROR - Falha ao inserir alarme '689' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,628 - src.database.db_manager - ERROR - Erro ao inserir alarme '690' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,628 - __main__ - ERROR - Falha ao inserir alarme '690' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,629 - src.database.db_manager - ERROR - Erro ao inserir alarme '691' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,629 - __main__ - ERROR - Falha ao inserir alarme '691' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,629 - src.database.db_manager - ERROR - Erro ao inserir alarme '692' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,629 - __main__ - ERROR - Falha ao inserir alarme '692' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,629 - src.database.db_manager - ERROR - Erro ao inserir alarme '693' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,629 - __main__ - ERROR - Falha ao inserir alarme '693' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,629 - src.database.db_manager - ERROR - Erro ao inserir alarme '694' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,629 - __main__ - ERROR - Falha ao inserir alarme '694' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,630 - src.database.db_manager - ERROR - Erro ao inserir alarme '695' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,630 - __main__ - ERROR - Falha ao inserir alarme '695' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,630 - src.database.db_manager - ERROR - Erro ao inserir alarme '696' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,630 - __main__ - ERROR - Falha ao inserir alarme '696' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,630 - src.database.db_manager - ERROR - Erro ao inserir alarme '697' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,630 - __main__ - ERROR - Falha ao inserir alarme '697' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,631 - src.database.db_manager - ERROR - Erro ao inserir alarme '698' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,631 - __main__ - ERROR - Falha ao inserir alarme '698' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,631 - src.database.db_manager - ERROR - Erro ao inserir alarme '699' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,631 - __main__ - ERROR - Falha ao inserir alarme '699' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,631 - src.database.db_manager - ERROR - Erro ao inserir alarme '700' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,631 - __main__ - ERROR - Falha ao inserir alarme '700' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,631 - src.database.db_manager - ERROR - Erro ao inserir alarme '701' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,631 - __main__ - ERROR - Falha ao inserir alarme '701' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,632 - src.database.db_manager - ERROR - Erro ao inserir alarme '702' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,632 - __main__ - ERROR - Falha ao inserir alarme '702' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,632 - src.database.db_manager - ERROR - Erro ao inserir alarme '703' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,632 - __main__ - ERROR - Falha ao inserir alarme '703' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,632 - src.database.db_manager - ERROR - Erro ao inserir alarme '704' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,632 - __main__ - ERROR - Falha ao inserir alarme '704' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,633 - src.database.db_manager - ERROR - Erro ao inserir alarme '705' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,633 - __main__ - ERROR - Falha ao inserir alarme '705' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,633 - src.database.db_manager - ERROR - Erro ao inserir alarme '706' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,633 - __main__ - ERROR - Falha ao inserir alarme '706' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,633 - src.database.db_manager - ERROR - Erro ao inserir alarme '707' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,633 - __main__ - ERROR - Falha ao inserir alarme '707' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,633 - src.database.db_manager - ERROR - Erro ao inserir alarme '708' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,633 - __main__ - ERROR - Falha ao inserir alarme '708' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,634 - src.database.db_manager - ERROR - Erro ao inserir alarme '709' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,634 - __main__ - ERROR - Falha ao inserir alarme '709' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,634 - src.database.db_manager - ERROR - Erro ao inserir alarme '710' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,634 - __main__ - ERROR - Falha ao inserir alarme '710' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,634 - src.database.db_manager - ERROR - Erro ao inserir alarme '711' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,634 - __main__ - ERROR - Falha ao inserir alarme '711' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,634 - src.database.db_manager - ERROR - Erro ao inserir alarme '712' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,634 - __main__ - ERROR - Falha ao inserir alarme '712' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,635 - src.database.db_manager - ERROR - Erro ao inserir alarme '713' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,635 - __main__ - ERROR - Falha ao inserir alarme '713' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,635 - src.database.db_manager - ERROR - Erro ao inserir alarme '714' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,635 - __main__ - ERROR - Falha ao inserir alarme '714' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,635 - src.database.db_manager - ERROR - Erro ao inserir alarme '715' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,635 - __main__ - ERROR - Falha ao inserir alarme '715' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,635 - src.database.db_manager - ERROR - Erro ao inserir alarme '716' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,635 - __main__ - ERROR - Falha ao inserir alarme '716' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,636 - src.database.db_manager - ERROR - Erro ao inserir alarme '717' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,636 - __main__ - ERROR - Falha ao inserir alarme '717' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,636 - src.database.db_manager - ERROR - Erro ao inserir alarme '718' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,636 - __main__ - ERROR - Falha ao inserir alarme '718' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,636 - src.database.db_manager - ERROR - Erro ao inserir alarme '719' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,636 - __main__ - ERROR - Falha ao inserir alarme '719' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,637 - src.database.db_manager - ERROR - Erro ao inserir alarme '720' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,637 - __main__ - ERROR - Falha ao inserir alarme '720' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,637 - src.database.db_manager - ERROR - Erro ao inserir alarme '721' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,637 - __main__ - ERROR - Falha ao inserir alarme '721' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,637 - src.database.db_manager - ERROR - Erro ao inserir alarme '722' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,637 - __main__ - ERROR - Falha ao inserir alarme '722' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,637 - src.database.db_manager - ERROR - Erro ao inserir alarme '723' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,638 - __main__ - ERROR - Falha ao inserir alarme '723' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,638 - src.database.db_manager - ERROR - Erro ao inserir alarme '724' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,638 - __main__ - ERROR - Falha ao inserir alarme '724' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,638 - src.database.db_manager - ERROR - Erro ao inserir alarme '725' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,638 - __main__ - ERROR - Falha ao inserir alarme '725' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,638 - src.database.db_manager - ERROR - Erro ao inserir alarme '726' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,638 - __main__ - ERROR - Falha ao inserir alarme '726' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,639 - src.database.db_manager - ERROR - Erro ao inserir alarme '727' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,639 - __main__ - ERROR - Falha ao inserir alarme '727' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,639 - src.database.db_manager - ERROR - Erro ao inserir alarme '728' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,639 - __main__ - ERROR - Falha ao inserir alarme '728' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,639 - src.database.db_manager - ERROR - Erro ao inserir alarme '729' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,639 - __main__ - ERROR - Falha ao inserir alarme '729' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,639 - src.database.db_manager - ERROR - Erro ao inserir alarme '730' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,639 - __main__ - ERROR - Falha ao inserir alarme '730' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,640 - src.database.db_manager - ERROR - Erro ao inserir alarme '731' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,640 - __main__ - ERROR - Falha ao inserir alarme '731' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,640 - src.database.db_manager - ERROR - Erro ao inserir alarme '732' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,640 - __main__ - ERROR - Falha ao inserir alarme '732' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,640 - src.database.db_manager - ERROR - Erro ao inserir alarme '733' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,640 - __main__ - ERROR - Falha ao inserir alarme '733' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,641 - src.database.db_manager - ERROR - Erro ao inserir alarme '734' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,641 - __main__ - ERROR - Falha ao inserir alarme '734' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,641 - src.database.db_manager - ERROR - Erro ao inserir alarme '735' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,641 - __main__ - ERROR - Falha ao inserir alarme '735' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,641 - src.database.db_manager - ERROR - Erro ao inserir alarme '736' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,641 - __main__ - ERROR - Falha ao inserir alarme '736' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,641 - src.database.db_manager - ERROR - Erro ao inserir alarme '737' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,642 - __main__ - ERROR - Falha ao inserir alarme '737' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,642 - src.database.db_manager - ERROR - Erro ao inserir alarme '738' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,642 - __main__ - ERROR - Falha ao inserir alarme '738' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,642 - src.database.db_manager - ERROR - Erro ao inserir alarme '739' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,642 - __main__ - ERROR - Falha ao inserir alarme '739' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,642 - src.database.db_manager - ERROR - Erro ao inserir alarme '740' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,642 - __main__ - ERROR - Falha ao inserir alarme '740' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,643 - src.database.db_manager - ERROR - Erro ao inserir alarme '741' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,643 - __main__ - ERROR - Falha ao inserir alarme '741' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,643 - src.database.db_manager - ERROR - Erro ao inserir alarme '742' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,643 - __main__ - ERROR - Falha ao inserir alarme '742' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,643 - src.database.db_manager - ERROR - Erro ao inserir alarme '743' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,643 - __main__ - ERROR - Falha ao inserir alarme '743' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,643 - src.database.db_manager - ERROR - Erro ao inserir alarme '744' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,643 - __main__ - ERROR - Falha ao inserir alarme '744' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,644 - src.database.db_manager - ERROR - Erro ao inserir alarme '745' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,644 - __main__ - ERROR - Falha ao inserir alarme '745' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,644 - src.database.db_manager - ERROR - Erro ao inserir alarme '746' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,644 - __main__ - ERROR - Falha ao inserir alarme '746' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,644 - src.database.db_manager - ERROR - Erro ao inserir alarme '747' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,644 - __main__ - ERROR - Falha ao inserir alarme '747' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,644 - src.database.db_manager - ERROR - Erro ao inserir alarme '748' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,645 - __main__ - ERROR - Falha ao inserir alarme '748' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,645 - src.database.db_manager - ERROR - Erro ao inserir alarme '749' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,645 - __main__ - ERROR - Falha ao inserir alarme '749' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,645 - src.database.db_manager - ERROR - Erro ao inserir alarme '750' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,645 - __main__ - ERROR - Falha ao inserir alarme '750' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,645 - src.database.db_manager - ERROR - Erro ao inserir alarme '751' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,645 - __main__ - ERROR - Falha ao inserir alarme '751' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,646 - src.database.db_manager - ERROR - Erro ao inserir alarme '752' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,646 - __main__ - ERROR - Falha ao inserir alarme '752' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,646 - src.database.db_manager - ERROR - Erro ao inserir alarme '753' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,646 - __main__ - ERROR - Falha ao inserir alarme '753' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,646 - src.database.db_manager - ERROR - Erro ao inserir alarme '754' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,646 - __main__ - ERROR - Falha ao inserir alarme '754' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,646 - src.database.db_manager - ERROR - Erro ao inserir alarme '755' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,647 - __main__ - ERROR - Falha ao inserir alarme '755' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,647 - src.database.db_manager - ERROR - Erro ao inserir alarme '756' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,647 - __main__ - ERROR - Falha ao inserir alarme '756' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,647 - src.database.db_manager - ERROR - Erro ao inserir alarme '757' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,647 - __main__ - ERROR - Falha ao inserir alarme '757' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,647 - src.database.db_manager - ERROR - Erro ao inserir alarme '758' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,647 - __main__ - ERROR - Falha ao inserir alarme '758' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,648 - src.database.db_manager - ERROR - Erro ao inserir alarme '759' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,648 - __main__ - ERROR - Falha ao inserir alarme '759' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,648 - src.database.db_manager - ERROR - Erro ao inserir alarme '760' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,648 - __main__ - ERROR - Falha ao inserir alarme '760' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,648 - src.database.db_manager - ERROR - Erro ao inserir alarme '761' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,648 - __main__ - ERROR - Falha ao inserir alarme '761' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,648 - src.database.db_manager - ERROR - Erro ao inserir alarme '762' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,648 - __main__ - ERROR - Falha ao inserir alarme '762' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,649 - src.database.db_manager - ERROR - Erro ao inserir alarme '763' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,649 - __main__ - ERROR - Falha ao inserir alarme '763' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,649 - src.database.db_manager - ERROR - Erro ao inserir alarme '764' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,649 - __main__ - ERROR - Falha ao inserir alarme '764' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,649 - src.database.db_manager - ERROR - Erro ao inserir alarme '765' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,649 - __main__ - ERROR - Falha ao inserir alarme '765' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,649 - src.database.db_manager - ERROR - Erro ao inserir alarme '766' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,649 - __main__ - ERROR - Falha ao inserir alarme '766' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,650 - src.database.db_manager - ERROR - Erro ao inserir alarme '767' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,650 - __main__ - ERROR - Falha ao inserir alarme '767' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,650 - src.database.db_manager - ERROR - Erro ao inserir alarme '768' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,650 - __main__ - ERROR - Falha ao inserir alarme '768' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,650 - src.database.db_manager - ERROR - Erro ao inserir alarme '769' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,650 - __main__ - ERROR - Falha ao inserir alarme '769' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,650 - src.database.db_manager - ERROR - Erro ao inserir alarme '770' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,650 - __main__ - ERROR - Falha ao inserir alarme '770' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,651 - src.database.db_manager - ERROR - Erro ao inserir alarme '771' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,651 - __main__ - ERROR - Falha ao inserir alarme '771' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,651 - src.database.db_manager - ERROR - Erro ao inserir alarme '772' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,651 - __main__ - ERROR - Falha ao inserir alarme '772' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,651 - src.database.db_manager - ERROR - Erro ao inserir alarme '773' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,651 - __main__ - ERROR - Falha ao inserir alarme '773' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,651 - src.database.db_manager - ERROR - Erro ao inserir alarme '774' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,651 - __main__ - ERROR - Falha ao inserir alarme '774' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,652 - src.database.db_manager - ERROR - Erro ao inserir alarme '775' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,652 - __main__ - ERROR - Falha ao inserir alarme '775' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,652 - src.database.db_manager - ERROR - Erro ao inserir alarme '776' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,652 - __main__ - ERROR - Falha ao inserir alarme '776' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,652 - src.database.db_manager - ERROR - Erro ao inserir alarme '777' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,652 - __main__ - ERROR - Falha ao inserir alarme '777' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,653 - src.database.db_manager - ERROR - Erro ao inserir alarme '807' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,653 - __main__ - ERROR - Falha ao inserir alarme '807' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,653 - src.database.db_manager - ERROR - Erro ao inserir alarme '808' para 'E250905AGV001': table Alarms has no column named project_id
+2026-07-28 00:19:01,653 - __main__ - ERROR - Falha ao inserir alarme '808' para o projeto 'E250905AGV001'.
+2026-07-28 00:19:01,653 - __main__ - INFO - Processamento do CSV 'Lista_de_Alarmes_AGV.csv' concluído. 337 linhas processadas.
+2026-07-28 00:19:01,653 - __main__ - INFO - Processamento completo para Lista_de_Alarmes_AGV.csv.
+2026-07-28 00:19:01,653 - src.database.db_manager - INFO - Conexão com o banco de dados fechada.
+2026-07-28 00:19:01,653 - __main__ - INFO - csv_extractor.py finalizado.

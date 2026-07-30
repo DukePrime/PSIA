@@ -1,0 +1,10 @@
+2026-07-28 22:43:12,056 - src.utils.logger_config - INFO - Logging configurado. Logs serão salvos em: D:\PSIA\PSIA\data_factory_project\logs\app_20260728_224312.log
+2026-07-28 22:43:12,068 - src.database.db_manager - INFO - Tabelas verificadas/criadas com sucesso.
+2026-07-28 22:43:12,068 - src.database.db_manager - INFO - DBManager inicializado com o banco de dados: data/selettra_data_factory.db
+2026-07-28 22:43:12,068 - __main__ - ERROR - Erro inesperado no script principal: PDFExtractor.__init__() takes 2 positional arguments but 3 were given
+Traceback (most recent call last):
+  File "D:\PSIA\PSIA\data_factory_project\src\processors\csv_extractor.py", line 124, in <module>
+    pdf_processor = PDFExtractor(db_manager, raw_pdf_dir)
+TypeError: PDFExtractor.__init__() takes 2 positional arguments but 3 were given
+2026-07-28 22:43:12,069 - src.database.db_manager - INFO - Conexão com o banco de dados fechada.
+2026-07-28 22:43:12,069 - __main__ - INFO - csv_extractor.py finalizado.

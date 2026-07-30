@@ -1,0 +1,82 @@
+2026-07-27 23:46:15,013 - src.utils.logger_config - INFO - Logging configurado. Logs serão salvos em: D:\PSIA\PSIA\data_factory_project\logs\main_processor_20260727_234615.log
+2026-07-27 23:46:15,013 - __main__ - INFO - Iniciando processamento do PDF: D:\PSIA\PSIA\data_factory_project\data\raw_pdfs\E250905AGV001__AGV_LOGSTICO_NIBUS__MBB_R1V1.pdf
+2026-07-27 23:46:15,013 - src.database.db_manager - INFO - DBManager inicializado com o banco de dados: D:\PSIA\PSIA\data_factory_project\./data/selettra_data_factory.db
+2026-07-27 23:46:15,014 - src.database.db_manager - INFO - Tabelas verificadas/criadas com sucesso.
+2026-07-27 23:46:15,014 - src.processors.pdf_extractor - INFO - PDFExtractor inicializado.
+2026-07-27 23:46:15,014 - __main__ - ERROR - Erro durante o processamento do PDF: 'PDFExtractor' object has no attribute 'process_pdf'
+Traceback (most recent call last):
+  File "D:\PSIA\PSIA\data_factory_project\src\processors\csv_extractor.py", line 123, in <module>
+    pdf_processor.process_pdf(pdf_file)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'PDFExtractor' object has no attribute 'process_pdf'
+2026-07-27 23:46:15,015 - __main__ - WARNING - O processamento do CSV pode falhar na associação de projeto se o PDF não foi processado com sucesso.
+2026-07-27 23:46:15,015 - __main__ - INFO - Iniciando processamento do CSV: D:\PSIA\PSIA\data_factory_project\data\raw_csvs\Lista_de_Alarmes_AGV.csv
+2026-07-27 23:46:15,015 - src.database.db_manager - INFO - DBManager inicializado com o banco de dados: D:\PSIA\PSIA\data_factory_project\./data/selettra_data_factory.db
+2026-07-27 23:46:15,016 - src.database.db_manager - INFO - Tabelas verificadas/criadas com sucesso.
+2026-07-27 23:46:15,016 - __main__ - INFO - CSVExtractor inicializado.
+2026-07-27 23:46:15,016 - __main__ - INFO - Iniciando processamento do arquivo CSV: D:\PSIA\PSIA\data_factory_project\data\raw_csvs\Lista_de_Alarmes_AGV.csv
+2026-07-27 23:46:15,016 - __main__ - WARNING - Projeto 'AGV LOGÍSTICO ÔNIBUS - MBB_R1' não encontrado no banco de dados. Alarmes serão inseridos sem associação de projeto.
+2026-07-27 23:46:15,016 - __main__ - ERROR - Erro ao buscar projeto 'AGV LOGÍSTICO ÔNIBUS - MBB_R1' no banco de dados: Cannot operate on a closed database.
+Traceback (most recent call last):
+  File "D:\PSIA\PSIA\data_factory_project\src\processors\csv_extractor.py", line 78, in process_csv
+    with self.db_manager as db:
+         ^^^^^^^^^^^^^^^
+  File "D:\PSIA\PSIA\data_factory_project\src\database\db_manager.py", line 63, in __exit__
+    self.conn.commit()
+    ~~~~~~~~~~~~~~~~^^
+sqlite3.ProgrammingError: Cannot operate on a closed database.
+2026-07-27 23:46:15,018 - __main__ - ERROR - Erro ao ler ou processar CSV D:\PSIA\PSIA\data_factory_project\data\raw_csvs\Lista_de_Alarmes_AGV.csv: Error tokenizing data. C error: Expected 9 fields in line 5, saw 10
+Traceback (most recent call last):
+  File "D:\PSIA\PSIA\data_factory_project\src\processors\csv_extractor.py", line 30, in extract_alarms_from_csv
+    df = pd.read_csv(csv_path, encoding='utf-8')
+  File "D:\PSIA\PSIA\data_factory_project\.venv\Lib\site-packages\pandas\io\parsers\readers.py", line 873, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "D:\PSIA\PSIA\data_factory_project\.venv\Lib\site-packages\pandas\io\parsers\readers.py", line 306, in _read
+    return parser.read(nrows)
+           ~~~~~~~~~~~^^^^^^^
+  File "D:\PSIA\PSIA\data_factory_project\.venv\Lib\site-packages\pandas\io\parsers\readers.py", line 1947, in read
+    ) = self._engine.read(  # type: ignore[attr-defined]
+        ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        nrows
+        ^^^^^
+    )
+    ^
+  File "D:\PSIA\PSIA\data_factory_project\.venv\Lib\site-packages\pandas\io\parsers\c_parser_wrapper.py", line 215, in read
+    chunks = self._reader.read_low_memory(nrows)
+  File "pandas/_libs/parsers.pyx", line 832, in pandas._libs.parsers.TextReader.read_low_memory
+  File "pandas/_libs/parsers.pyx", line 897, in pandas._libs.parsers.TextReader._read_rows
+  File "pandas/_libs/parsers.pyx", line 868, in pandas._libs.parsers.TextReader._tokenize_rows
+  File "pandas/_libs/parsers.pyx", line 885, in pandas._libs.parsers.TextReader._check_tokenize_status
+  File "pandas/_libs/parsers.pyx", line 2084, in pandas._libs.parsers.raise_parser_error
+pandas.errors.ParserError: Error tokenizing data. C error: Expected 9 fields in line 5, saw 10
+
+2026-07-27 23:46:15,019 - __main__ - ERROR - Falha ao processar e inserir alarmes do CSV D:\PSIA\PSIA\data_factory_project\data\raw_csvs\Lista_de_Alarmes_AGV.csv: Error tokenizing data. C error: Expected 9 fields in line 5, saw 10
+Traceback (most recent call last):
+  File "D:\PSIA\PSIA\data_factory_project\src\processors\csv_extractor.py", line 91, in process_csv
+    alarms = self.extract_alarms_from_csv(csv_file_path, project_id)
+  File "D:\PSIA\PSIA\data_factory_project\src\processors\csv_extractor.py", line 30, in extract_alarms_from_csv
+    df = pd.read_csv(csv_path, encoding='utf-8')
+  File "D:\PSIA\PSIA\data_factory_project\.venv\Lib\site-packages\pandas\io\parsers\readers.py", line 873, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "D:\PSIA\PSIA\data_factory_project\.venv\Lib\site-packages\pandas\io\parsers\readers.py", line 306, in _read
+    return parser.read(nrows)
+           ~~~~~~~~~~~^^^^^^^
+  File "D:\PSIA\PSIA\data_factory_project\.venv\Lib\site-packages\pandas\io\parsers\readers.py", line 1947, in read
+    ) = self._engine.read(  # type: ignore[attr-defined]
+        ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        nrows
+        ^^^^^
+    )
+    ^
+  File "D:\PSIA\PSIA\data_factory_project\.venv\Lib\site-packages\pandas\io\parsers\c_parser_wrapper.py", line 215, in read
+    chunks = self._reader.read_low_memory(nrows)
+  File "pandas/_libs/parsers.pyx", line 832, in pandas._libs.parsers.TextReader.read_low_memory
+  File "pandas/_libs/parsers.pyx", line 897, in pandas._libs.parsers.TextReader._read_rows
+  File "pandas/_libs/parsers.pyx", line 868, in pandas._libs.parsers.TextReader._tokenize_rows
+  File "pandas/_libs/parsers.pyx", line 885, in pandas._libs.parsers.TextReader._check_tokenize_status
+  File "pandas/_libs/parsers.pyx", line 2084, in pandas._libs.parsers.raise_parser_error
+pandas.errors.ParserError: Error tokenizing data. C error: Expected 9 fields in line 5, saw 10
+
+2026-07-27 23:46:15,020 - __main__ - INFO - Processamento do CSV concluído.
+2026-07-27 23:46:15,020 - __main__ - INFO - Verifique o arquivo de log na pasta 'logs' para detalhes.
+2026-07-27 23:46:15,020 - __main__ - INFO - Use um visualizador SQLite (ex: DB Browser for SQLite) para inspecionar 'D:\PSIA\PSIA\data_factory_project\data\selettra_data_factory.db'.

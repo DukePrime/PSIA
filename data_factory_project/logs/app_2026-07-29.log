@@ -1,0 +1,366 @@
+2026-07-29 16:58:34,441 - data_factory_logger - INFO - Iniciando o processo de extração de CSV.
+2026-07-29 16:58:34,441 - data_factory_logger - ERROR - Não há conexão com o banco de dados. Chame connect() primeiro.
+2026-07-29 16:58:34,441 - data_factory_logger - INFO - Tabelas do banco de dados verificadas/criadas.
+2026-07-29 16:58:34,441 - data_factory_logger - INFO - CSVExtractor inicializado.
+2026-07-29 16:58:34,441 - data_factory_logger - ERROR - Erro durante a execução do extrator CSV: 'CSVExtractor' object has no attribute 'extract_and_load'
+Traceback (most recent call last):
+  File "D:\PSIA\PSIA\data_factory_project\main.py", line 34, in run_csv_extraction
+    csv_extractor.extract_and_load(csv_file_path)
+AttributeError: 'CSVExtractor' object has no attribute 'extract_and_load'
+2026-07-29 19:55:51,559 - data_factory_logger - INFO - Iniciando extração de CSV do arquivo: D:\PSIA\PSIA\data_factory_project\data\raw_csvs\Lista_de_Alarmes_AGV.csv
+2026-07-29 19:55:51,562 - data_factory_logger - INFO - Conectando ao banco de dados: D:\PSIA\PSIA\data_factory_project\data\data_factory.db
+2026-07-29 19:55:51,563 - data_factory_logger - INFO - Conectado ao banco de dados: D:\PSIA\PSIA\data_factory_project\data\data_factory.db
+2026-07-29 19:55:51,568 - data_factory_logger - INFO - Tabela 'sistemas_afetados' verificada/criada.
+2026-07-29 19:55:51,571 - data_factory_logger - INFO - Tabela 'dispositivos' verificada/criada.
+2026-07-29 19:55:51,573 - data_factory_logger - INFO - Tabela 'alarmes' verificada/criada.
+2026-07-29 19:55:51,574 - data_factory_logger - INFO - Todas as tabelas foram verificadas/criadas com sucesso.
+2026-07-29 19:55:51,574 - data_factory_logger - INFO - CSVExtractor inicializado.
+2026-07-29 19:55:51,574 - data_factory_logger - ERROR - Ocorreu um erro durante a extração ou carregamento do CSV: 'CSVExtractor' object has no attribute 'extract_and_load'
+Traceback (most recent call last):
+  File "D:\PSIA\PSIA\data_factory_project\run_csv_extraction.py", line 31, in main
+    extractor.extract_and_load(csv_file_path)
+AttributeError: 'CSVExtractor' object has no attribute 'extract_and_load'
+2026-07-29 19:55:51,574 - data_factory_logger - INFO - Conexão com o banco de dados fechada.
+2026-07-29 19:55:51,574 - data_factory_logger - INFO - Conexão com o banco de dados fechada.
+2026-07-29 20:00:43,494 - data_factory_logger - INFO - Iniciando extração de CSV do arquivo: D:\PSIA\PSIA\data_factory_project\data\raw_csvs\Lista_de_Alarmes_AGV.csv
+2026-07-29 20:00:43,495 - data_factory_logger - INFO - Conectando ao banco de dados: D:\PSIA\PSIA\data_factory_project\data\data_factory.db
+2026-07-29 20:00:43,496 - data_factory_logger - INFO - Conectado ao banco de dados: D:\PSIA\PSIA\data_factory_project\data\data_factory.db
+2026-07-29 20:00:43,496 - data_factory_logger - INFO - Tabela 'sistemas_afetados' verificada/criada.
+2026-07-29 20:00:43,497 - data_factory_logger - INFO - Tabela 'dispositivos' verificada/criada.
+2026-07-29 20:00:43,497 - data_factory_logger - INFO - Tabela 'alarmes' verificada/criada.
+2026-07-29 20:00:43,497 - data_factory_logger - INFO - Todas as tabelas foram verificadas/criadas com sucesso.
+2026-07-29 20:00:43,497 - data_factory_logger - INFO - CSVExtractor inicializado.
+2026-07-29 20:00:43,497 - data_factory_logger - INFO - Lendo arquivo CSV: D:\PSIA\PSIA\data_factory_project\data\raw_csvs\Lista_de_Alarmes_AGV.csv
+2026-07-29 20:00:43,513 - data_factory_logger - ERROR - Erro ao ler o arquivo CSV 'D:\PSIA\PSIA\data_factory_project\data\raw_csvs\Lista_de_Alarmes_AGV.csv': Error tokenizing data. C error: Expected 9 fields in line 5, saw 10
+
+2026-07-29 20:00:43,513 - data_factory_logger - ERROR - Ocorreu um erro durante a extração ou carregamento do CSV: Error tokenizing data. C error: Expected 9 fields in line 5, saw 10
+Traceback (most recent call last):
+  File "D:\PSIA\PSIA\data_factory_project\run_csv_extraction.py", line 30, in main
+    extractor.extract_and_load(csv_file_path)
+  File "D:\PSIA\PSIA\data_factory_project\src\csv_processor\csv_extractor.py", line 277, in extract_and_load
+    df = pd.read_csv(csv_filepath)
+  File "D:\PSIA\PSIA\.venv\lib\site-packages\pandas\io\parsers\readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "D:\PSIA\PSIA\.venv\lib\site-packages\pandas\io\parsers\readers.py", line 626, in _read
+    return parser.read(nrows)
+  File "D:\PSIA\PSIA\.venv\lib\site-packages\pandas\io\parsers\readers.py", line 1923, in read
+    ) = self._engine.read(  # type: ignore[attr-defined]
+  File "D:\PSIA\PSIA\.venv\lib\site-packages\pandas\io\parsers\c_parser_wrapper.py", line 234, in read
+    chunks = self._reader.read_low_memory(nrows)
+  File "parsers.pyx", line 838, in pandas._libs.parsers.TextReader.read_low_memory
+  File "parsers.pyx", line 905, in pandas._libs.parsers.TextReader._read_rows
+  File "parsers.pyx", line 874, in pandas._libs.parsers.TextReader._tokenize_rows
+  File "parsers.pyx", line 891, in pandas._libs.parsers.TextReader._check_tokenize_status
+  File "parsers.pyx", line 2061, in pandas._libs.parsers.raise_parser_error
+pandas.errors.ParserError: Error tokenizing data. C error: Expected 9 fields in line 5, saw 10
+
+2026-07-29 20:00:43,533 - data_factory_logger - INFO - Conexão com o banco de dados fechada.
+2026-07-29 20:00:43,533 - data_factory_logger - INFO - Conexão com o banco de dados fechada.
+2026-07-29 20:20:57,566 - data_factory_logger - INFO - Iniciando extração de CSV do arquivo: D:\PSIA\PSIA\data_factory_project\data\raw_csvs\Lista_de_Alarmes_AGV.csv
+2026-07-29 20:20:57,566 - data_factory_logger - INFO - Conectando ao banco de dados: D:\PSIA\PSIA\data_factory_project\data\data_factory.db
+2026-07-29 20:20:57,567 - data_factory_logger - INFO - Conectado ao banco de dados: D:\PSIA\PSIA\data_factory_project\data\data_factory.db
+2026-07-29 20:20:57,567 - data_factory_logger - INFO - Tabela 'sistemas_afetados' verificada/criada.
+2026-07-29 20:20:57,567 - data_factory_logger - INFO - Tabela 'dispositivos' verificada/criada.
+2026-07-29 20:20:57,567 - data_factory_logger - INFO - Tabela 'alarmes' verificada/criada.
+2026-07-29 20:20:57,567 - data_factory_logger - INFO - Todas as tabelas foram verificadas/criadas com sucesso.
+2026-07-29 20:20:57,567 - data_factory_logger - INFO - CSVExtractor inicializado.
+2026-07-29 20:20:57,567 - data_factory_logger - INFO - Lendo arquivo CSV: D:\PSIA\PSIA\data_factory_project\data\raw_csvs\Lista_de_Alarmes_AGV.csv
+2026-07-29 20:20:57,603 - data_factory_logger - ERROR - Erro ao ler o arquivo CSV 'D:\PSIA\PSIA\data_factory_project\data\raw_csvs\Lista_de_Alarmes_AGV.csv': Error tokenizing data. C error: Expected 14 fields in line 5, saw 15
+
+2026-07-29 20:20:57,603 - data_factory_logger - ERROR - Ocorreu um erro durante a extração ou carregamento do CSV: Error tokenizing data. C error: Expected 14 fields in line 5, saw 15
+Traceback (most recent call last):
+  File "D:\PSIA\PSIA\data_factory_project\run_csv_extraction.py", line 30, in main
+    extractor.extract_and_load(csv_file_path)
+  File "D:\PSIA\PSIA\data_factory_project\src\csv_processor\csv_extractor.py", line 277, in extract_and_load
+    df = pd.read_csv(csv_filepath)
+  File "D:\PSIA\PSIA\.venv\lib\site-packages\pandas\io\parsers\readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "D:\PSIA\PSIA\.venv\lib\site-packages\pandas\io\parsers\readers.py", line 626, in _read
+    return parser.read(nrows)
+  File "D:\PSIA\PSIA\.venv\lib\site-packages\pandas\io\parsers\readers.py", line 1923, in read
+    ) = self._engine.read(  # type: ignore[attr-defined]
+  File "D:\PSIA\PSIA\.venv\lib\site-packages\pandas\io\parsers\c_parser_wrapper.py", line 234, in read
+    chunks = self._reader.read_low_memory(nrows)
+  File "parsers.pyx", line 838, in pandas._libs.parsers.TextReader.read_low_memory
+  File "parsers.pyx", line 905, in pandas._libs.parsers.TextReader._read_rows
+  File "parsers.pyx", line 874, in pandas._libs.parsers.TextReader._tokenize_rows
+  File "parsers.pyx", line 891, in pandas._libs.parsers.TextReader._check_tokenize_status
+  File "parsers.pyx", line 2061, in pandas._libs.parsers.raise_parser_error
+pandas.errors.ParserError: Error tokenizing data. C error: Expected 14 fields in line 5, saw 15
+
+2026-07-29 20:20:57,605 - data_factory_logger - INFO - Conexão com o banco de dados fechada.
+2026-07-29 20:20:57,605 - data_factory_logger - INFO - Conexão com o banco de dados fechada.
+2026-07-29 23:17:23,335 - data_factory_logger - INFO - Iniciando extração de CSV do arquivo: D:\PSIA\PSIA\data_factory_project\data\raw_csvs\Lista_de_Alarmes_AGV.csv
+2026-07-29 23:17:23,335 - data_factory_logger - INFO - Conectando ao banco de dados: D:\PSIA\PSIA\data_factory_project\data\data_factory.db
+2026-07-29 23:17:23,339 - data_factory_logger - INFO - Conectado ao banco de dados: D:\PSIA\PSIA\data_factory_project\data\data_factory.db
+2026-07-29 23:17:23,340 - data_factory_logger - INFO - Tabela 'sistemas_afetados' verificada/criada.
+2026-07-29 23:17:23,341 - data_factory_logger - INFO - Tabela 'dispositivos' verificada/criada.
+2026-07-29 23:17:23,341 - data_factory_logger - INFO - Tabela 'alarmes' verificada/criada.
+2026-07-29 23:17:23,342 - data_factory_logger - INFO - Todas as tabelas foram verificadas/criadas com sucesso.
+2026-07-29 23:17:23,342 - data_factory_logger - INFO - CSVExtractor inicializado.
+2026-07-29 23:17:23,343 - data_factory_logger - INFO - Lendo arquivo CSV: D:\PSIA\PSIA\data_factory_project\data\raw_csvs\Lista_de_Alarmes_AGV.csv
+2026-07-29 23:17:23,346 - data_factory_logger - ERROR - Erro ao ler o arquivo CSV 'D:\PSIA\PSIA\data_factory_project\data\raw_csvs\Lista_de_Alarmes_AGV.csv': 'utf-8' codec can't decode byte 0xf3 in position 1: invalid continuation byte
+2026-07-29 23:17:23,347 - data_factory_logger - ERROR - Ocorreu um erro durante a extração ou carregamento do CSV: 'utf-8' codec can't decode byte 0xf3 in position 1: invalid continuation byte
+Traceback (most recent call last):
+  File "D:\PSIA\PSIA\data_factory_project\run_csv_extraction.py", line 30, in main
+    extractor.extract_and_load(csv_file_path)
+  File "D:\PSIA\PSIA\data_factory_project\src\csv_processor\csv_extractor.py", line 277, in extract_and_load
+    df = pd.read_csv(csv_filepath)
+  File "D:\PSIA\PSIA\.venv\lib\site-packages\pandas\io\parsers\readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "D:\PSIA\PSIA\.venv\lib\site-packages\pandas\io\parsers\readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "D:\PSIA\PSIA\.venv\lib\site-packages\pandas\io\parsers\readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "D:\PSIA\PSIA\.venv\lib\site-packages\pandas\io\parsers\readers.py", line 1898, in _make_engine
+    return mapping[engine](f, **self.options)
+  File "D:\PSIA\PSIA\.venv\lib\site-packages\pandas\io\parsers\c_parser_wrapper.py", line 93, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+  File "parsers.pyx", line 574, in pandas._libs.parsers.TextReader.__cinit__
+  File "parsers.pyx", line 663, in pandas._libs.parsers.TextReader._get_header
+  File "parsers.pyx", line 874, in pandas._libs.parsers.TextReader._tokenize_rows
+  File "parsers.pyx", line 891, in pandas._libs.parsers.TextReader._check_tokenize_status
+  File "parsers.pyx", line 2053, in pandas._libs.parsers.raise_parser_error
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf3 in position 1: invalid continuation byte
+2026-07-29 23:17:23,459 - data_factory_logger - INFO - Conexão com o banco de dados fechada.
+2026-07-29 23:17:23,460 - data_factory_logger - INFO - Conexão com o banco de dados fechada.
+2026-07-29 23:30:25,268 - data_factory_logger - INFO - Iniciando extração de CSV do arquivo: D:\PSIA\PSIA\data_factory_project\data\raw_csvs\Lista_de_Alarmes_AGV.csv
+2026-07-29 23:30:25,268 - data_factory_logger - INFO - Conectando ao banco de dados: D:\PSIA\PSIA\data_factory_project\data\data_factory.db
+2026-07-29 23:30:25,269 - data_factory_logger - INFO - Conectado ao banco de dados: D:\PSIA\PSIA\data_factory_project\data\data_factory.db
+2026-07-29 23:30:25,270 - data_factory_logger - INFO - Tabela 'sistemas_afetados' verificada/criada.
+2026-07-29 23:30:25,270 - data_factory_logger - INFO - Tabela 'dispositivos' verificada/criada.
+2026-07-29 23:30:25,270 - data_factory_logger - INFO - Tabela 'alarmes' verificada/criada.
+2026-07-29 23:30:25,270 - data_factory_logger - INFO - Todas as tabelas foram verificadas/criadas com sucesso.
+2026-07-29 23:30:25,270 - data_factory_logger - INFO - CSVExtractor inicializado.
+2026-07-29 23:30:25,270 - data_factory_logger - INFO - Lendo arquivo CSV: D:\PSIA\PSIA\data_factory_project\data\raw_csvs\Lista_de_Alarmes_AGV.csv
+2026-07-29 23:30:25,285 - data_factory_logger - ERROR - Erro ao ler o arquivo CSV 'D:\PSIA\PSIA\data_factory_project\data\raw_csvs\Lista_de_Alarmes_AGV.csv': Error tokenizing data. C error: Expected 9 fields in line 5, saw 10
+
+2026-07-29 23:30:25,285 - data_factory_logger - ERROR - Ocorreu um erro durante a extração ou carregamento do CSV: Error tokenizing data. C error: Expected 9 fields in line 5, saw 10
+Traceback (most recent call last):
+  File "D:\PSIA\PSIA\data_factory_project\run_csv_extraction.py", line 30, in main
+    extractor.extract_and_load(csv_file_path)
+  File "D:\PSIA\PSIA\data_factory_project\src\csv_processor\csv_extractor.py", line 277, in extract_and_load
+    df = pd.read_csv(csv_filepath, encoding='latin1')
+  File "D:\PSIA\PSIA\.venv\lib\site-packages\pandas\io\parsers\readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "D:\PSIA\PSIA\.venv\lib\site-packages\pandas\io\parsers\readers.py", line 626, in _read
+    return parser.read(nrows)
+  File "D:\PSIA\PSIA\.venv\lib\site-packages\pandas\io\parsers\readers.py", line 1923, in read
+    ) = self._engine.read(  # type: ignore[attr-defined]
+  File "D:\PSIA\PSIA\.venv\lib\site-packages\pandas\io\parsers\c_parser_wrapper.py", line 234, in read
+    chunks = self._reader.read_low_memory(nrows)
+  File "parsers.pyx", line 838, in pandas._libs.parsers.TextReader.read_low_memory
+  File "parsers.pyx", line 905, in pandas._libs.parsers.TextReader._read_rows
+  File "parsers.pyx", line 874, in pandas._libs.parsers.TextReader._tokenize_rows
+  File "parsers.pyx", line 891, in pandas._libs.parsers.TextReader._check_tokenize_status
+  File "parsers.pyx", line 2061, in pandas._libs.parsers.raise_parser_error
+pandas.errors.ParserError: Error tokenizing data. C error: Expected 9 fields in line 5, saw 10
+
+2026-07-29 23:30:25,287 - data_factory_logger - INFO - Conexão com o banco de dados fechada.
+2026-07-29 23:30:25,287 - data_factory_logger - INFO - Conexão com o banco de dados fechada.
+2026-07-29 23:30:35,815 - data_factory_logger - INFO - Iniciando extração de CSV do arquivo: D:\PSIA\PSIA\data_factory_project\data\raw_csvs\Lista_de_Alarmes_AGV.csv
+2026-07-29 23:30:35,815 - data_factory_logger - INFO - Conectando ao banco de dados: D:\PSIA\PSIA\data_factory_project\data\data_factory.db
+2026-07-29 23:30:35,816 - data_factory_logger - INFO - Conectado ao banco de dados: D:\PSIA\PSIA\data_factory_project\data\data_factory.db
+2026-07-29 23:30:35,816 - data_factory_logger - INFO - Tabela 'sistemas_afetados' verificada/criada.
+2026-07-29 23:30:35,816 - data_factory_logger - INFO - Tabela 'dispositivos' verificada/criada.
+2026-07-29 23:30:35,816 - data_factory_logger - INFO - Tabela 'alarmes' verificada/criada.
+2026-07-29 23:30:35,816 - data_factory_logger - INFO - Todas as tabelas foram verificadas/criadas com sucesso.
+2026-07-29 23:30:35,817 - data_factory_logger - INFO - CSVExtractor inicializado.
+2026-07-29 23:30:35,817 - data_factory_logger - INFO - Lendo arquivo CSV: D:\PSIA\PSIA\data_factory_project\data\raw_csvs\Lista_de_Alarmes_AGV.csv
+2026-07-29 23:30:35,821 - data_factory_logger - ERROR - Erro ao ler o arquivo CSV 'D:\PSIA\PSIA\data_factory_project\data\raw_csvs\Lista_de_Alarmes_AGV.csv': Error tokenizing data. C error: Expected 9 fields in line 5, saw 10
+
+2026-07-29 23:30:35,821 - data_factory_logger - ERROR - Ocorreu um erro durante a extração ou carregamento do CSV: Error tokenizing data. C error: Expected 9 fields in line 5, saw 10
+Traceback (most recent call last):
+  File "D:\PSIA\PSIA\data_factory_project\run_csv_extraction.py", line 30, in main
+    extractor.extract_and_load(csv_file_path)
+  File "D:\PSIA\PSIA\data_factory_project\src\csv_processor\csv_extractor.py", line 277, in extract_and_load
+    df = pd.read_csv(csv_filepath, encoding='latin1')
+  File "D:\PSIA\PSIA\.venv\lib\site-packages\pandas\io\parsers\readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "D:\PSIA\PSIA\.venv\lib\site-packages\pandas\io\parsers\readers.py", line 626, in _read
+    return parser.read(nrows)
+  File "D:\PSIA\PSIA\.venv\lib\site-packages\pandas\io\parsers\readers.py", line 1923, in read
+    ) = self._engine.read(  # type: ignore[attr-defined]
+  File "D:\PSIA\PSIA\.venv\lib\site-packages\pandas\io\parsers\c_parser_wrapper.py", line 234, in read
+    chunks = self._reader.read_low_memory(nrows)
+  File "parsers.pyx", line 838, in pandas._libs.parsers.TextReader.read_low_memory
+  File "parsers.pyx", line 905, in pandas._libs.parsers.TextReader._read_rows
+  File "parsers.pyx", line 874, in pandas._libs.parsers.TextReader._tokenize_rows
+  File "parsers.pyx", line 891, in pandas._libs.parsers.TextReader._check_tokenize_status
+  File "parsers.pyx", line 2061, in pandas._libs.parsers.raise_parser_error
+pandas.errors.ParserError: Error tokenizing data. C error: Expected 9 fields in line 5, saw 10
+
+2026-07-29 23:30:35,822 - data_factory_logger - INFO - Conexão com o banco de dados fechada.
+2026-07-29 23:30:35,822 - data_factory_logger - INFO - Conexão com o banco de dados fechada.
+2026-07-29 23:32:47,208 - data_factory_logger - INFO - Iniciando extração de CSV do arquivo: D:\PSIA\PSIA\data_factory_project\data\raw_csvs\Lista_de_Alarmes_AGV.csv
+2026-07-29 23:32:47,208 - data_factory_logger - INFO - Conectando ao banco de dados: D:\PSIA\PSIA\data_factory_project\data\data_factory.db
+2026-07-29 23:32:47,208 - data_factory_logger - INFO - Conectado ao banco de dados: D:\PSIA\PSIA\data_factory_project\data\data_factory.db
+2026-07-29 23:32:47,209 - data_factory_logger - INFO - Tabela 'sistemas_afetados' verificada/criada.
+2026-07-29 23:32:47,209 - data_factory_logger - INFO - Tabela 'dispositivos' verificada/criada.
+2026-07-29 23:32:47,209 - data_factory_logger - INFO - Tabela 'alarmes' verificada/criada.
+2026-07-29 23:32:47,209 - data_factory_logger - INFO - Todas as tabelas foram verificadas/criadas com sucesso.
+2026-07-29 23:32:47,209 - data_factory_logger - INFO - CSVExtractor inicializado.
+2026-07-29 23:32:47,209 - data_factory_logger - INFO - Lendo arquivo CSV: D:\PSIA\PSIA\data_factory_project\data\raw_csvs\Lista_de_Alarmes_AGV.csv
+2026-07-29 23:32:47,225 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'CAN OPEN: BOOTING POWERTRAIN'
+2026-07-29 23:32:47,225 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'CAN OPEN: BOOTING LIFT'
+2026-07-29 23:32:47,225 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'GENERALS: IN MANUAL MODE'
+2026-07-29 23:32:47,225 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'GENERALS: IN AUTOMATIC MODE'
+2026-07-29 23:32:47,226 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'GENERALS: IN AUTOSTART MODE'
+2026-07-29 23:32:47,226 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'GENERALS: BYPASS KEY ACTIVATED'
+2026-07-29 23:32:47,226 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'GENERALS: BYPASS ACTIVATED'
+2026-07-29 23:32:47,226 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'GENERALS: SYNCHRONIZED'
+2026-07-29 23:32:47,226 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'GENERALS: IN AUTOMATIC MODE AND NOT AUTOSTART'
+2026-07-29 23:32:47,226 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'NAVIGATION: DATA NOT VALID FROM MC'
+2026-07-29 23:32:47,227 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'NAVIGATION: LINE NOT FOUND'
+2026-07-29 23:32:47,227 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'NAVIGATION: LINE LOST'
+2026-07-29 23:32:47,227 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'NAVIGATION: ANTICOLLISION ON'
+2026-07-29 23:32:47,227 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'NAVIGATION: CHECKPOINTFAILED'
+2026-07-29 23:32:47,227 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'NAVIGATION: PRECISE POSITIONING NOT REACHED'
+2026-07-29 23:32:47,227 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'SYSTEM: SYSTEM BOOTING'
+2026-07-29 23:32:47,228 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'SYSTEM PROFINET: 80FQ1 COMMUNICATION FAILURE - SCANNER FRONT'
+2026-07-29 23:32:47,228 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'SYSTEM PROFINET: 80FQ2 COMMUNICATION FAILURE - SCANNER REAR'
+2026-07-29 23:32:47,228 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'SYSTEM PROFINET: 91XF2 COMMUNICATION FAILURE - SCALANCE'
+2026-07-29 23:32:47,228 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'SYSTEM PROFINET: 75BS2 COMMUNICATION FAILURE - ENCODER FRONT'
+2026-07-29 23:32:47,228 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'SYSTEM PROFINET: 75BS4 COMMUNICATION FAILURE - ENCODER REAR'
+2026-07-29 23:32:47,230 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'WHEELS FRONT STEERING: RIGHT STROKE'
+2026-07-29 23:32:47,230 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'WHEELS FRONT STEERING: RIGHT STROKE'
+2026-07-29 23:32:47,230 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'WHEELS REAR STEERING: RIGHT STROKE'
+2026-07-29 23:32:47,230 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'WHEELS REAR STEERING: RIGHT STROKE'
+2026-07-29 23:32:47,234 - data_factory_logger - ERROR - Erro ao inserir dados no banco de dados: 'DBManager' object has no attribute 'insert_alarmes'
+2026-07-29 23:32:47,234 - data_factory_logger - ERROR - Ocorreu um erro durante a extração ou carregamento do CSV: 'DBManager' object has no attribute 'insert_alarmes'
+Traceback (most recent call last):
+  File "D:\PSIA\PSIA\data_factory_project\run_csv_extraction.py", line 30, in main
+    extractor.extract_and_load(csv_file_path)
+  File "D:\PSIA\PSIA\data_factory_project\src\csv_processor\csv_extractor.py", line 309, in extract_and_load
+    self.db_manager.insert_alarmes(df_to_insert.to_dict(orient='records'))
+AttributeError: 'DBManager' object has no attribute 'insert_alarmes'
+2026-07-29 23:32:47,235 - data_factory_logger - INFO - Conexão com o banco de dados fechada.
+2026-07-29 23:32:47,235 - data_factory_logger - INFO - Conexão com o banco de dados fechada.
+2026-07-29 23:35:52,777 - data_factory_logger - INFO - Iniciando extração de CSV do arquivo: D:\PSIA\PSIA\data_factory_project\data\raw_csvs\Lista_de_Alarmes_AGV.csv
+2026-07-29 23:35:52,777 - data_factory_logger - INFO - Conectando ao banco de dados: D:\PSIA\PSIA\data_factory_project\data\data_factory.db
+2026-07-29 23:35:52,777 - data_factory_logger - INFO - DBManager inicializado com banco de dados: D:\PSIA\PSIA\data_factory_project\data\data_factory.db
+2026-07-29 23:35:52,778 - data_factory_logger - INFO - Conectado ao banco de dados: D:\PSIA\PSIA\data_factory_project\data\data_factory.db
+2026-07-29 23:35:52,778 - data_factory_logger - INFO - Tabela 'sistemas_afetados' verificada/criada.
+2026-07-29 23:35:52,779 - data_factory_logger - INFO - Tabela 'dispositivos' verificada/criada.
+2026-07-29 23:35:52,779 - data_factory_logger - INFO - Tabela 'alarmes' verificada/criada.
+2026-07-29 23:35:52,779 - data_factory_logger - INFO - Todas as tabelas foram verificadas/criadas com sucesso.
+2026-07-29 23:35:52,779 - data_factory_logger - INFO - CSVExtractor inicializado.
+2026-07-29 23:35:52,780 - data_factory_logger - INFO - Lendo arquivo CSV: D:\PSIA\PSIA\data_factory_project\data\raw_csvs\Lista_de_Alarmes_AGV.csv
+2026-07-29 23:35:52,790 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'CAN OPEN: BOOTING POWERTRAIN'
+2026-07-29 23:35:52,790 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'CAN OPEN: BOOTING LIFT'
+2026-07-29 23:35:52,790 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'GENERALS: IN MANUAL MODE'
+2026-07-29 23:35:52,790 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'GENERALS: IN AUTOMATIC MODE'
+2026-07-29 23:35:52,790 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'GENERALS: IN AUTOSTART MODE'
+2026-07-29 23:35:52,791 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'GENERALS: BYPASS KEY ACTIVATED'
+2026-07-29 23:35:52,791 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'GENERALS: BYPASS ACTIVATED'
+2026-07-29 23:35:52,791 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'GENERALS: SYNCHRONIZED'
+2026-07-29 23:35:52,791 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'GENERALS: IN AUTOMATIC MODE AND NOT AUTOSTART'
+2026-07-29 23:35:52,791 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'NAVIGATION: DATA NOT VALID FROM MC'
+2026-07-29 23:35:52,791 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'NAVIGATION: LINE NOT FOUND'
+2026-07-29 23:35:52,791 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'NAVIGATION: LINE LOST'
+2026-07-29 23:35:52,791 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'NAVIGATION: ANTICOLLISION ON'
+2026-07-29 23:35:52,792 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'NAVIGATION: CHECKPOINTFAILED'
+2026-07-29 23:35:52,792 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'NAVIGATION: PRECISE POSITIONING NOT REACHED'
+2026-07-29 23:35:52,792 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'SYSTEM: SYSTEM BOOTING'
+2026-07-29 23:35:52,792 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'SYSTEM PROFINET: 80FQ1 COMMUNICATION FAILURE - SCANNER FRONT'
+2026-07-29 23:35:52,792 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'SYSTEM PROFINET: 80FQ2 COMMUNICATION FAILURE - SCANNER REAR'
+2026-07-29 23:35:52,793 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'SYSTEM PROFINET: 91XF2 COMMUNICATION FAILURE - SCALANCE'
+2026-07-29 23:35:52,793 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'SYSTEM PROFINET: 75BS2 COMMUNICATION FAILURE - ENCODER FRONT'
+2026-07-29 23:35:52,793 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'SYSTEM PROFINET: 75BS4 COMMUNICATION FAILURE - ENCODER REAR'
+2026-07-29 23:35:52,795 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'WHEELS FRONT STEERING: RIGHT STROKE'
+2026-07-29 23:35:52,795 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'WHEELS FRONT STEERING: RIGHT STROKE'
+2026-07-29 23:35:52,795 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'WHEELS REAR STEERING: RIGHT STROKE'
+2026-07-29 23:35:52,795 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'WHEELS REAR STEERING: RIGHT STROKE'
+2026-07-29 23:35:52,800 - data_factory_logger - ERROR - Erro ao inserir alarmes: table dispositivos has no column named tag
+2026-07-29 23:35:52,800 - data_factory_logger - ERROR - Erro ao inserir dados no banco de dados: table dispositivos has no column named tag
+2026-07-29 23:35:52,800 - data_factory_logger - ERROR - Ocorreu um erro durante a extração ou carregamento do CSV: table dispositivos has no column named tag
+Traceback (most recent call last):
+  File "D:\PSIA\PSIA\data_factory_project\run_csv_extraction.py", line 30, in main
+    extractor.extract_and_load(csv_file_path)
+  File "D:\PSIA\PSIA\data_factory_project\src\csv_processor\csv_extractor.py", line 309, in extract_and_load
+    self.db_manager.insert_alarmes(df_to_insert.to_dict(orient='records'))
+  File "D:\PSIA\PSIA\data_factory_project\src\database\db_manager.py", line 94, in insert_alarmes
+    self.cursor.execute("INSERT OR IGNORE INTO dispositivos (tag) VALUES (?)", (tag_dispositivo,))
+sqlite3.OperationalError: table dispositivos has no column named tag
+2026-07-29 23:35:52,802 - data_factory_logger - INFO - Conexão com o banco de dados fechada.
+2026-07-29 23:35:52,802 - data_factory_logger - INFO - Conexão com o banco de dados fechada.
+2026-07-29 23:42:31,665 - data_factory_logger - INFO - Iniciando extração de CSV do arquivo: D:\PSIA\PSIA\data_factory_project\data\raw_csvs\Lista_de_Alarmes_AGV.csv
+2026-07-29 23:42:31,665 - data_factory_logger - INFO - Conectando ao banco de dados: D:\PSIA\PSIA\data_factory_project\data\data_factory.db
+2026-07-29 23:42:31,665 - data_factory_logger - INFO - DBManager inicializado com banco de dados: D:\PSIA\PSIA\data_factory_project\data\data_factory.db
+2026-07-29 23:42:31,665 - data_factory_logger - INFO - Conectado ao banco de dados: D:\PSIA\PSIA\data_factory_project\data\data_factory.db
+2026-07-29 23:42:31,668 - data_factory_logger - INFO - Tabela 'sistemas_afetados' verificada/criada.
+2026-07-29 23:42:31,671 - data_factory_logger - INFO - Tabela 'dispositivos' verificada/criada.
+2026-07-29 23:42:31,673 - data_factory_logger - INFO - Tabela 'alarmes' verificada/criada.
+2026-07-29 23:42:31,673 - data_factory_logger - INFO - Todas as tabelas foram verificadas/criadas com sucesso.
+2026-07-29 23:42:31,673 - data_factory_logger - INFO - CSVExtractor inicializado.
+2026-07-29 23:42:31,674 - data_factory_logger - INFO - Lendo arquivo CSV: D:\PSIA\PSIA\data_factory_project\data\raw_csvs\Lista_de_Alarmes_AGV.csv
+2026-07-29 23:42:31,685 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'CAN OPEN: BOOTING POWERTRAIN'
+2026-07-29 23:42:31,685 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'CAN OPEN: BOOTING LIFT'
+2026-07-29 23:42:31,686 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'GENERALS: IN MANUAL MODE'
+2026-07-29 23:42:31,686 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'GENERALS: IN AUTOMATIC MODE'
+2026-07-29 23:42:31,686 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'GENERALS: IN AUTOSTART MODE'
+2026-07-29 23:42:31,686 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'GENERALS: BYPASS KEY ACTIVATED'
+2026-07-29 23:42:31,686 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'GENERALS: BYPASS ACTIVATED'
+2026-07-29 23:42:31,686 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'GENERALS: SYNCHRONIZED'
+2026-07-29 23:42:31,687 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'GENERALS: IN AUTOMATIC MODE AND NOT AUTOSTART'
+2026-07-29 23:42:31,687 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'NAVIGATION: DATA NOT VALID FROM MC'
+2026-07-29 23:42:31,687 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'NAVIGATION: LINE NOT FOUND'
+2026-07-29 23:42:31,687 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'NAVIGATION: LINE LOST'
+2026-07-29 23:42:31,687 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'NAVIGATION: ANTICOLLISION ON'
+2026-07-29 23:42:31,687 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'NAVIGATION: CHECKPOINTFAILED'
+2026-07-29 23:42:31,688 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'NAVIGATION: PRECISE POSITIONING NOT REACHED'
+2026-07-29 23:42:31,688 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'SYSTEM: SYSTEM BOOTING'
+2026-07-29 23:42:31,688 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'SYSTEM PROFINET: 80FQ1 COMMUNICATION FAILURE - SCANNER FRONT'
+2026-07-29 23:42:31,688 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'SYSTEM PROFINET: 80FQ2 COMMUNICATION FAILURE - SCANNER REAR'
+2026-07-29 23:42:31,688 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'SYSTEM PROFINET: 91XF2 COMMUNICATION FAILURE - SCALANCE'
+2026-07-29 23:42:31,688 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'SYSTEM PROFINET: 75BS2 COMMUNICATION FAILURE - ENCODER FRONT'
+2026-07-29 23:42:31,688 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'SYSTEM PROFINET: 75BS4 COMMUNICATION FAILURE - ENCODER REAR'
+2026-07-29 23:42:31,690 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'WHEELS FRONT STEERING: RIGHT STROKE'
+2026-07-29 23:42:31,690 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'WHEELS FRONT STEERING: RIGHT STROKE'
+2026-07-29 23:42:31,690 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'WHEELS REAR STEERING: RIGHT STROKE'
+2026-07-29 23:42:31,690 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'WHEELS REAR STEERING: RIGHT STROKE'
+2026-07-29 23:42:31,700 - data_factory_logger - INFO - 337 alarmes inseridos com sucesso.
+2026-07-29 23:42:31,700 - data_factory_logger - INFO - 337 registros inseridos na tabela 'alarmes'.
+2026-07-29 23:42:31,701 - data_factory_logger - INFO - Extração e carregamento do CSV concluídos com sucesso.
+2026-07-29 23:42:31,701 - data_factory_logger - INFO - Conexão com o banco de dados fechada.
+2026-07-29 23:42:31,701 - data_factory_logger - INFO - Conexão com o banco de dados fechada.
+2026-07-29 23:52:09,734 - data_factory_logger - INFO - Iniciando extração de CSV do arquivo: D:\PSIA\PSIA\data_factory_project\data\raw_csvs\Lista_de_Alarmes_AGV.csv
+2026-07-29 23:52:09,735 - data_factory_logger - INFO - Conectando ao banco de dados: D:\PSIA\PSIA\data_factory_project\data\data_factory.db
+2026-07-29 23:52:09,735 - data_factory_logger - INFO - DBManager inicializado com banco de dados: D:\PSIA\PSIA\data_factory_project\data\data_factory.db
+2026-07-29 23:52:09,735 - data_factory_logger - INFO - Conectado ao banco de dados: D:\PSIA\PSIA\data_factory_project\data\data_factory.db
+2026-07-29 23:52:09,738 - data_factory_logger - INFO - Tabela 'sistemas_afetados' verificada/criada.
+2026-07-29 23:52:09,740 - data_factory_logger - INFO - Tabela 'dispositivos' verificada/criada.
+2026-07-29 23:52:09,742 - data_factory_logger - INFO - Tabela 'alarmes' verificada/criada.
+2026-07-29 23:52:09,742 - data_factory_logger - INFO - Todas as tabelas foram verificadas/criadas com sucesso.
+2026-07-29 23:52:09,742 - data_factory_logger - INFO - CSVExtractor inicializado.
+2026-07-29 23:52:09,742 - data_factory_logger - INFO - Lendo arquivo CSV: D:\PSIA\PSIA\data_factory_project\data\raw_csvs\Lista_de_Alarmes_AGV.csv
+2026-07-29 23:52:09,752 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'CAN OPEN: BOOTING POWERTRAIN'
+2026-07-29 23:52:09,752 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'CAN OPEN: BOOTING LIFT'
+2026-07-29 23:52:09,753 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'GENERALS: IN MANUAL MODE'
+2026-07-29 23:52:09,753 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'GENERALS: IN AUTOMATIC MODE'
+2026-07-29 23:52:09,753 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'GENERALS: IN AUTOSTART MODE'
+2026-07-29 23:52:09,753 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'GENERALS: BYPASS KEY ACTIVATED'
+2026-07-29 23:52:09,753 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'GENERALS: BYPASS ACTIVATED'
+2026-07-29 23:52:09,753 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'GENERALS: SYNCHRONIZED'
+2026-07-29 23:52:09,754 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'GENERALS: IN AUTOMATIC MODE AND NOT AUTOSTART'
+2026-07-29 23:52:09,754 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'NAVIGATION: DATA NOT VALID FROM MC'
+2026-07-29 23:52:09,754 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'NAVIGATION: LINE NOT FOUND'
+2026-07-29 23:52:09,754 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'NAVIGATION: LINE LOST'
+2026-07-29 23:52:09,754 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'NAVIGATION: ANTICOLLISION ON'
+2026-07-29 23:52:09,754 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'NAVIGATION: CHECKPOINTFAILED'
+2026-07-29 23:52:09,754 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'NAVIGATION: PRECISE POSITIONING NOT REACHED'
+2026-07-29 23:52:09,755 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'SYSTEM: SYSTEM BOOTING'
+2026-07-29 23:52:09,755 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'SYSTEM PROFINET: 80FQ1 COMMUNICATION FAILURE - SCANNER FRONT'
+2026-07-29 23:52:09,755 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'SYSTEM PROFINET: 80FQ2 COMMUNICATION FAILURE - SCANNER REAR'
+2026-07-29 23:52:09,755 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'SYSTEM PROFINET: 91XF2 COMMUNICATION FAILURE - SCALANCE'
+2026-07-29 23:52:09,755 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'SYSTEM PROFINET: 75BS2 COMMUNICATION FAILURE - ENCODER FRONT'
+2026-07-29 23:52:09,755 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'SYSTEM PROFINET: 75BS4 COMMUNICATION FAILURE - ENCODER REAR'
+2026-07-29 23:52:09,757 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'WHEELS FRONT STEERING: RIGHT STROKE'
+2026-07-29 23:52:09,757 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'WHEELS FRONT STEERING: RIGHT STROKE'
+2026-07-29 23:52:09,757 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'WHEELS REAR STEERING: RIGHT STROKE'
+2026-07-29 23:52:09,757 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'WHEELS REAR STEERING: RIGHT STROKE'
+2026-07-29 23:52:09,765 - data_factory_logger - INFO - 337 alarmes inseridos com sucesso.
+2026-07-29 23:52:09,766 - data_factory_logger - INFO - 337 registros inseridos na tabela 'alarmes'.
+2026-07-29 23:52:09,766 - data_factory_logger - INFO - Extração e carregamento do CSV concluídos com sucesso.
+2026-07-29 23:52:09,766 - data_factory_logger - INFO - Conexão com o banco de dados fechada.
+2026-07-29 23:52:09,766 - data_factory_logger - INFO - Conexão com o banco de dados fechada.

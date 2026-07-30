@@ -1,0 +1,17 @@
+2026-07-28 01:13:28,442 - src.utils.logger_config - INFO - Logging configurado. Logs serão salvos em: D:\PSIA\PSIA\data_factory_project\logs\app_20260728_011328.log
+2026-07-28 01:13:28,443 - __main__ - INFO - Banco de dados existente 'data/selettra_data_factory.db' removido com sucesso.
+2026-07-28 01:13:28,451 - src.database.db_manager - INFO - Tabelas verificadas/criadas com sucesso.
+2026-07-28 01:13:28,452 - src.database.db_manager - INFO - DBManager inicializado com o banco de dados: data/selettra_data_factory.db
+2026-07-28 01:13:28,452 - src.processors.pdf_extractor - INFO - PDFExtractor inicializado.
+2026-07-28 01:13:28,452 - __main__ - INFO - CSVExtractor inicializado.
+2026-07-28 01:13:28,453 - __main__ - INFO - Iniciando processamento do PDF: E250905.AGV.001 - AGV LOGÍSTICO ÔNIBUS - MBB_R1V1.pdf
+2026-07-28 01:13:28,458 - src.database.db_manager - INFO - Projeto 'E250905.AGV.001' inserido com sucesso.
+2026-07-28 01:13:57,879 - src.processors.pdf_extractor - INFO - Texto extraído do PDF: E250905.AGV.001 - AGV LOGÍSTICO ÔNIBUS - MBB_R1V1.pdf.
+2026-07-28 01:13:57,889 - src.database.db_manager - INFO - Conteúdo do PDF para o projeto 'E250905.AGV.001' inserido com sucesso.
+2026-07-28 01:13:57,889 - __main__ - INFO - Processamento do PDF 'E250905.AGV.001 - AGV LOGÍSTICO ÔNIBUS - MBB_R1V1.pdf' concluído com sucesso.
+2026-07-28 01:13:57,889 - __main__ - INFO - Iniciando processamento do CSV: Lista_de_Alarmes_AGV.csv
+2026-07-28 01:13:57,889 - __main__ - INFO - Iniciando processamento do arquivo CSV: Lista_de_Alarmes_AGV.csv
+2026-07-28 01:13:57,890 - __main__ - ERROR - Erro ao ler CSV 'Lista_de_Alarmes_AGV.csv': [Errno 2] No such file or directory: 'Lista_de_Alarmes_AGV.csv'
+2026-07-28 01:13:57,891 - __main__ - WARNING - Nenhum alarme válido extraído do CSV: Lista_de_Alarmes_AGV.csv.
+2026-07-28 01:13:57,891 - src.database.db_manager - INFO - Conexão com o banco de dados fechada.
+2026-07-28 01:13:57,891 - __main__ - INFO - csv_extractor.py finalizado.

@@ -1,0 +1,3 @@
+2026-07-28 22:42:02,537 - src.utils.logger_config - INFO - Logging configurado. Logs serão salvos em: D:\PSIA\PSIA\data_factory_project\logs\app_20260728_224202.log
+2026-07-28 22:42:02,541 - __main__ - ERROR - Variáveis de ambiente DB_PATH, RAW_PDF_DIR ou RAW_CSV_DIR não configuradas no .env
+2026-07-28 22:42:02,541 - __main__ - INFO - csv_extractor.py finalizado.

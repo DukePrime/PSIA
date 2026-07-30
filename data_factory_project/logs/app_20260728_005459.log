@@ -1,0 +1,23 @@
+2026-07-28 00:54:59,128 - src.utils.logger_config - INFO - Logging configurado. Logs serão salvos em: D:\PSIA\PSIA\data_factory_project\logs\app_20260728_005459.log
+2026-07-28 00:54:59,129 - __main__ - INFO - Banco de dados existente 'data/selettra_data_factory.db' removido com sucesso.
+2026-07-28 00:54:59,129 - src.database.db_manager - INFO - DBManager inicializado com o banco de dados: data/selettra_data_factory.db
+2026-07-28 00:54:59,137 - src.database.db_manager - INFO - Tabelas verificadas/criadas com sucesso.
+2026-07-28 00:54:59,138 - src.processors.pdf_extractor - INFO - PDFExtractor inicializado.
+2026-07-28 00:54:59,138 - __main__ - INFO - CSVExtractor inicializado.
+2026-07-28 00:54:59,138 - __main__ - INFO - Iniciando processamento do PDF: E250905.AGV.001 - AGV LOGÍSTICO ÔNIBUS - MBB_R1V1.pdf
+2026-07-28 00:54:59,139 - __main__ - ERROR - Erro durante o processamento do PDF: DBManager.insert_project() takes 2 positional arguments but 4 were given
+Traceback (most recent call last):
+  File "D:\PSIA\PSIA\data_factory_project\src\processors\csv_extractor.py", line 147, in <module>
+    if pdf_processor.extract_and_load_pdf_data(pdf_file):
+       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "D:\PSIA\PSIA\data_factory_project\src\processors\pdf_extractor.py", line 45, in extract_and_load_pdf_data
+    if self.db_manager.insert_project(project_id, project_name, pdf_filename):
+       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: DBManager.insert_project() takes 2 positional arguments but 4 were given
+2026-07-28 00:54:59,141 - __main__ - WARNING - O processamento do CSV pode falhar na associação de projeto se o PDF não foi processado com sucesso.
+2026-07-28 00:54:59,141 - __main__ - INFO - Iniciando processamento do arquivo CSV: data/raw_csvs\Lista_de_Alarmes_AGV.csv
+2026-07-28 00:54:59,154 - __main__ - ERROR - CSV 'Lista_de_Alarmes_AGV.csv' não contém todas as colunas esperadas. Colunas encontradas: ['ita3pico', 'id', 'classe', 'descriaao', 'possaveis_causas', 'sugestao_de_correaao']. Colunas esperadas: ['topico', 'id', 'classe', 'descricao', 'possiveis_causas', 'sugestao_de_correcao']. Colunas faltando: ['topico', 'descricao', 'possiveis_causas', 'sugestao_de_correcao']
+2026-07-28 00:54:59,154 - __main__ - WARNING - Nenhum alarme válido extraído do CSV: Lista_de_Alarmes_AGV.csv.
+2026-07-28 00:54:59,154 - __main__ - ERROR - Falha no processamento para Lista_de_Alarmes_AGV.csv.
+2026-07-28 00:54:59,155 - src.database.db_manager - INFO - Conexão com o banco de dados fechada.
+2026-07-28 00:54:59,155 - __main__ - INFO - csv_extractor.py finalizado.

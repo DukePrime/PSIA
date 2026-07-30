@@ -1,0 +1,126 @@
+2026-07-30 00:19:30,033 - data_factory_logger - INFO - Iniciando extração de CSV do arquivo: D:\PSIA\PSIA\data_factory_project\data\raw_csvs\Lista_de_Alarmes_AGV.csv
+2026-07-30 00:19:30,034 - data_factory_logger - INFO - Conectando ao banco de dados: D:\PSIA\PSIA\data_factory_project\data\data_factory.db
+2026-07-30 00:19:30,034 - data_factory_logger - INFO - DBManager inicializado com banco de dados: D:\PSIA\PSIA\data_factory_project\data\data_factory.db
+2026-07-30 00:19:30,034 - data_factory_logger - INFO - Conectado ao banco de dados: D:\PSIA\PSIA\data_factory_project\data\data_factory.db
+2026-07-30 00:19:30,037 - data_factory_logger - INFO - Tabela 'sistemas_afetados' verificada/criada.
+2026-07-30 00:19:30,043 - data_factory_logger - INFO - Tabela 'dispositivos' verificada/criada.
+2026-07-30 00:19:30,047 - data_factory_logger - INFO - Tabela 'alarmes' verificada/criada.
+2026-07-30 00:19:30,047 - data_factory_logger - INFO - Todas as tabelas foram verificadas/criadas com sucesso.
+2026-07-30 00:19:30,047 - data_factory_logger - INFO - CSVExtractor inicializado.
+2026-07-30 00:19:30,049 - data_factory_logger - INFO - Lendo arquivo CSV: D:\PSIA\PSIA\data_factory_project\data\raw_csvs\Lista_de_Alarmes_AGV.csv
+2026-07-30 00:19:30,059 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'GENERALS: IN MANUAL MODE'
+2026-07-30 00:19:30,060 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'GENERALS: IN AUTOMATIC MODE'
+2026-07-30 00:19:30,060 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'GENERALS: IN AUTOSTART MODE'
+2026-07-30 00:19:30,060 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'GENERALS: BYPASS KEY ACTIVATED'
+2026-07-30 00:19:30,060 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'GENERALS: BYPASS ACTIVATED'
+2026-07-30 00:19:30,060 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'GENERALS: SYNCHRONIZED'
+2026-07-30 00:19:30,060 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'GENERALS: IN AUTOMATIC MODE AND NOT AUTOSTART'
+2026-07-30 00:19:30,060 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'NAVIGATION: DATA NOT VALID FROM MC'
+2026-07-30 00:19:30,061 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'NAVIGATION: LINE NOT FOUND'
+2026-07-30 00:19:30,061 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'NAVIGATION: LINE LOST'
+2026-07-30 00:19:30,061 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'NAVIGATION: ANTICOLLISION ON'
+2026-07-30 00:19:30,061 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'NAVIGATION: CHECKPOINTFAILED'
+2026-07-30 00:19:30,061 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'NAVIGATION: PRECISE POSITIONING NOT REACHED'
+2026-07-30 00:19:30,061 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'SYSTEM: SYSTEM BOOTING'
+2026-07-30 00:19:30,062 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'WHEELS FRONT STEERING: RIGHT STROKE'
+2026-07-30 00:19:30,063 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'WHEELS FRONT STEERING: RIGHT STROKE'
+2026-07-30 00:19:30,063 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'WHEELS REAR STEERING: RIGHT STROKE'
+2026-07-30 00:19:30,063 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'WHEELS REAR STEERING: RIGHT STROKE'
+2026-07-30 00:19:30,071 - data_factory_logger - INFO - 337 alarmes inseridos com sucesso.
+2026-07-30 00:19:30,071 - data_factory_logger - INFO - 337 registros inseridos na tabela 'alarmes'.
+2026-07-30 00:19:30,072 - data_factory_logger - INFO - Extração e carregamento do CSV concluídos com sucesso.
+2026-07-30 00:19:30,072 - data_factory_logger - INFO - Conexão com o banco de dados fechada.
+2026-07-30 00:19:30,072 - data_factory_logger - INFO - Conexão com o banco de dados fechada.
+2026-07-30 00:20:55,180 - data_factory_logger - INFO - Iniciando extração de CSV do arquivo: D:\PSIA\PSIA\data_factory_project\data\raw_csvs\Lista_de_Alarmes_AGV.csv
+2026-07-30 00:20:55,180 - data_factory_logger - INFO - Conectando ao banco de dados: D:\PSIA\PSIA\data_factory_project\data\data_factory.db
+2026-07-30 00:20:55,180 - data_factory_logger - INFO - DBManager inicializado com banco de dados: D:\PSIA\PSIA\data_factory_project\data\data_factory.db
+2026-07-30 00:20:55,181 - data_factory_logger - INFO - Conectado ao banco de dados: D:\PSIA\PSIA\data_factory_project\data\data_factory.db
+2026-07-30 00:20:55,184 - data_factory_logger - INFO - Tabela 'sistemas_afetados' verificada/criada.
+2026-07-30 00:20:55,186 - data_factory_logger - INFO - Tabela 'dispositivos' verificada/criada.
+2026-07-30 00:20:55,188 - data_factory_logger - INFO - Tabela 'alarmes' verificada/criada.
+2026-07-30 00:20:55,188 - data_factory_logger - INFO - Todas as tabelas foram verificadas/criadas com sucesso.
+2026-07-30 00:20:55,188 - data_factory_logger - INFO - CSVExtractor inicializado.
+2026-07-30 00:20:55,188 - data_factory_logger - INFO - Lendo arquivo CSV: D:\PSIA\PSIA\data_factory_project\data\raw_csvs\Lista_de_Alarmes_AGV.csv
+2026-07-30 00:20:55,199 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'GENERALS: IN MANUAL MODE'
+2026-07-30 00:20:55,199 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'GENERALS: IN AUTOMATIC MODE'
+2026-07-30 00:20:55,199 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'GENERALS: IN AUTOSTART MODE'
+2026-07-30 00:20:55,200 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'GENERALS: BYPASS KEY ACTIVATED'
+2026-07-30 00:20:55,200 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'GENERALS: BYPASS ACTIVATED'
+2026-07-30 00:20:55,200 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'GENERALS: SYNCHRONIZED'
+2026-07-30 00:20:55,200 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'GENERALS: IN AUTOMATIC MODE AND NOT AUTOSTART'
+2026-07-30 00:20:55,200 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'NAVIGATION: DATA NOT VALID FROM MC'
+2026-07-30 00:20:55,200 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'NAVIGATION: LINE NOT FOUND'
+2026-07-30 00:20:55,200 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'NAVIGATION: LINE LOST'
+2026-07-30 00:20:55,201 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'NAVIGATION: ANTICOLLISION ON'
+2026-07-30 00:20:55,201 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'NAVIGATION: CHECKPOINTFAILED'
+2026-07-30 00:20:55,201 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'NAVIGATION: PRECISE POSITIONING NOT REACHED'
+2026-07-30 00:20:55,201 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'SYSTEM: SYSTEM BOOTING'
+2026-07-30 00:20:55,203 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'WHEELS FRONT STEERING: RIGHT STROKE'
+2026-07-30 00:20:55,203 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'WHEELS FRONT STEERING: RIGHT STROKE'
+2026-07-30 00:20:55,203 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'WHEELS REAR STEERING: RIGHT STROKE'
+2026-07-30 00:20:55,203 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'WHEELS REAR STEERING: RIGHT STROKE'
+2026-07-30 00:20:55,211 - data_factory_logger - INFO - 337 alarmes inseridos com sucesso.
+2026-07-30 00:20:55,211 - data_factory_logger - INFO - 337 registros inseridos na tabela 'alarmes'.
+2026-07-30 00:20:55,211 - data_factory_logger - INFO - Extração e carregamento do CSV concluídos com sucesso.
+2026-07-30 00:20:55,212 - data_factory_logger - INFO - Conexão com o banco de dados fechada.
+2026-07-30 00:20:55,212 - data_factory_logger - INFO - Conexão com o banco de dados fechada.
+2026-07-30 00:47:32,635 - data_factory_logger - INFO - Iniciando extração de CSV do arquivo: D:\PSIA\PSIA\data_factory_project\data\raw_csvs\Lista_de_Alarmes_AGV.csv
+2026-07-30 00:47:32,635 - data_factory_logger - INFO - Conectando ao banco de dados: D:\PSIA\PSIA\data_factory_project\data\data_factory.db
+2026-07-30 00:47:32,635 - data_factory_logger - INFO - DBManager inicializado com banco de dados: D:\PSIA\PSIA\data_factory_project\data\data_factory.db
+2026-07-30 00:47:32,635 - data_factory_logger - INFO - Conectado ao banco de dados: D:\PSIA\PSIA\data_factory_project\data\data_factory.db
+2026-07-30 00:47:32,639 - data_factory_logger - INFO - Tabela 'sistemas_afetados' verificada/criada.
+2026-07-30 00:47:32,641 - data_factory_logger - INFO - Tabela 'dispositivos' verificada/criada.
+2026-07-30 00:47:32,643 - data_factory_logger - INFO - Tabela 'alarmes' verificada/criada.
+2026-07-30 00:47:32,643 - data_factory_logger - INFO - Todas as tabelas foram verificadas/criadas com sucesso.
+2026-07-30 00:47:32,644 - data_factory_logger - INFO - CSVExtractor inicializado.
+2026-07-30 00:47:32,644 - data_factory_logger - INFO - Lendo arquivo CSV: D:\PSIA\PSIA\data_factory_project\data\raw_csvs\Lista_de_Alarmes_AGV.csv
+2026-07-30 00:47:32,657 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'WHEELS: AGV STOPPED BY MASTER CONTROLLER'
+2026-07-30 00:47:32,658 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'WHEELS: STO FAILURE DRIVE 60TL1'
+2026-07-30 00:47:32,658 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'WHEELS: STO FAILURE DRIVE 60TL1'
+2026-07-30 00:47:32,658 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'WHEELS: STO FAILURE DRIVE 61TL1'
+2026-07-30 00:47:32,658 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'WHEELS: STO FAILURE DRIVE 62TL1'
+2026-07-30 00:47:32,658 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'WHEELS: STO FAILURE DRIVE 63TL1'
+2026-07-30 00:47:32,659 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'WHEELS: BRAKE 60TL1 - NOT OPEN'
+2026-07-30 00:47:32,659 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'WHEELS: BRAKE 62TL1 - NOT OPEN'
+2026-07-30 00:47:32,659 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'WHEELS: BRAKE 60TL1 - NOT CLOSE'
+2026-07-30 00:47:32,659 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'WHEELS: BRAKE 62TL1 - NOT CLOSE'
+2026-07-30 00:47:32,669 - data_factory_logger - INFO - 337 alarmes inseridos com sucesso.
+2026-07-30 00:47:32,669 - data_factory_logger - INFO - 337 registros inseridos na tabela 'alarmes'.
+2026-07-30 00:47:32,669 - data_factory_logger - INFO - Extração e carregamento do CSV concluídos com sucesso.
+2026-07-30 00:47:32,669 - data_factory_logger - INFO - Conexão com o banco de dados fechada.
+2026-07-30 00:47:32,670 - data_factory_logger - INFO - Conexão com o banco de dados fechada.
+2026-07-30 00:58:29,058 - data_factory_logger - INFO - Iniciando extração de CSV do arquivo: D:\PSIA\PSIA\data_factory_project\data\raw_csvs\Lista_de_Alarmes_AGV.csv
+2026-07-30 00:58:29,058 - data_factory_logger - INFO - Conectando ao banco de dados: D:\PSIA\PSIA\data_factory_project\data\data_factory.db
+2026-07-30 00:58:29,058 - data_factory_logger - INFO - DBManager inicializado com banco de dados: D:\PSIA\PSIA\data_factory_project\data\data_factory.db
+2026-07-30 00:58:29,058 - data_factory_logger - INFO - Conectado ao banco de dados: D:\PSIA\PSIA\data_factory_project\data\data_factory.db
+2026-07-30 00:58:29,062 - data_factory_logger - INFO - Tabela 'sistemas_afetados' verificada/criada.
+2026-07-30 00:58:29,064 - data_factory_logger - INFO - Tabela 'dispositivos' verificada/criada.
+2026-07-30 00:58:29,068 - data_factory_logger - INFO - Tabela 'alarmes' verificada/criada.
+2026-07-30 00:58:29,068 - data_factory_logger - INFO - Todas as tabelas foram verificadas/criadas com sucesso.
+2026-07-30 00:58:29,068 - data_factory_logger - INFO - CSVExtractor inicializado.
+2026-07-30 00:58:29,068 - data_factory_logger - INFO - Lendo arquivo CSV: D:\PSIA\PSIA\data_factory_project\data\raw_csvs\Lista_de_Alarmes_AGV.csv
+2026-07-30 00:58:29,084 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'WHEELS: AGV STOPPED BY MASTER CONTROLLER'
+2026-07-30 00:58:29,085 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'WHEELS: BRAKE 60TL1 - NOT OPEN'
+2026-07-30 00:58:29,085 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'WHEELS: BRAKE 62TL1 - NOT OPEN'
+2026-07-30 00:58:29,085 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'WHEELS: BRAKE 60TL1 - NOT CLOSE'
+2026-07-30 00:58:29,085 - data_factory_logger - WARNING - Nenhuma TAG de dispositivo encontrada para a descrição: 'WHEELS: BRAKE 62TL1 - NOT CLOSE'
+2026-07-30 00:58:29,096 - data_factory_logger - INFO - 337 alarmes inseridos com sucesso.
+2026-07-30 00:58:29,096 - data_factory_logger - INFO - 337 registros inseridos na tabela 'alarmes'.
+2026-07-30 00:58:29,096 - data_factory_logger - INFO - Extração e carregamento do CSV concluídos com sucesso.
+2026-07-30 00:58:29,096 - data_factory_logger - INFO - Conexão com o banco de dados fechada.
+2026-07-30 00:58:29,096 - data_factory_logger - INFO - Conexão com o banco de dados fechada.
+2026-07-30 01:04:17,222 - data_factory_logger - INFO - Iniciando extração de CSV do arquivo: D:\PSIA\PSIA\data_factory_project\data\raw_csvs\Lista_de_Alarmes_AGV.csv
+2026-07-30 01:04:17,222 - data_factory_logger - INFO - Conectando ao banco de dados: D:\PSIA\PSIA\data_factory_project\data\data_factory.db
+2026-07-30 01:04:17,223 - data_factory_logger - INFO - DBManager inicializado com banco de dados: D:\PSIA\PSIA\data_factory_project\data\data_factory.db
+2026-07-30 01:04:17,223 - data_factory_logger - INFO - Conectado ao banco de dados: D:\PSIA\PSIA\data_factory_project\data\data_factory.db
+2026-07-30 01:04:17,227 - data_factory_logger - INFO - Tabela 'sistemas_afetados' verificada/criada.
+2026-07-30 01:04:17,229 - data_factory_logger - INFO - Tabela 'dispositivos' verificada/criada.
+2026-07-30 01:04:17,232 - data_factory_logger - INFO - Tabela 'alarmes' verificada/criada.
+2026-07-30 01:04:17,232 - data_factory_logger - INFO - Todas as tabelas foram verificadas/criadas com sucesso.
+2026-07-30 01:04:17,232 - data_factory_logger - INFO - CSVExtractor inicializado.
+2026-07-30 01:04:17,232 - data_factory_logger - INFO - Lendo arquivo CSV: D:\PSIA\PSIA\data_factory_project\data\raw_csvs\Lista_de_Alarmes_AGV.csv
+2026-07-30 01:04:17,256 - data_factory_logger - INFO - 337 alarmes inseridos com sucesso.
+2026-07-30 01:04:17,256 - data_factory_logger - INFO - 337 registros inseridos na tabela 'alarmes'.
+2026-07-30 01:04:17,256 - data_factory_logger - INFO - Extração e carregamento do CSV concluídos com sucesso.
+2026-07-30 01:04:17,256 - data_factory_logger - INFO - Conexão com o banco de dados fechada.
+2026-07-30 01:04:17,256 - data_factory_logger - INFO - Conexão com o banco de dados fechada.
